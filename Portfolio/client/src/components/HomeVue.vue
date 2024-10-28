@@ -3,17 +3,23 @@
 </script>
 
 <template>
+
   <div class="container">
     <div class="container_top_left">
-      <h3>Hello</h3>
-      <h1>I'm XXXX</h1>
-      <h2>Web Sofwtare</h2>
-      <h5>From Belgium</h5>
+      {{  $i18n.messages.msg.translation.content.greeting }}
+      <h1>{{  $i18n.messages.msg.translation.content.greeting.title }}</h1>
+      <h1>{{  $i18n.messages.msg.translation.content.greeting.name }}</h1>
+      <h2>{{  $i18n.messages.msg.translation.content.greeting.job }}</h2>
+      <h5>{{  $i18n.messages.msg.translation.content.greeting.country_info }}</h5>
     </div>
 
     <div class="container_left_bottom">
-      <b-button class="gradient-button">qsd</b-button>
-      <b-button class="custom-reverse-button">wdfdd</b-button>
+      <b-button class="gradient-button">
+        {{  $i18n.messages.msg.translation.content.button.hire }}
+      </b-button>
+      <b-button class="custom-reverse-button">
+        {{  $i18n.messages.msg.translation.content.button.cv }}
+      </b-button>
     </div>
 
     <div class="container_right">

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./dist && tsc",
-    "dev": "nodemon",
+    "dev": "copy .env.local .env && nodemon",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
@@ -16,6 +16,7 @@
   "author": "Gabriel Espinosa",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/i18n": "^0.13.12",
     "@types/jest": "^29.5.14",
@@ -36,10 +37,13 @@
   "dependencies": {
     "@types/i18next": "^13.0.0",
     "@types/i18next-express-middleware": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "i18n": "^0.15.1",
-    "i18next": "^23.16.3",
+    "i18next": "^23.16.4",
     "i18next-express-middleware": "^2.0.0",
-    "i18next-fs-backend": "^2.3.2"
+    "i18next-fs-backend": "^2.3.2",
+    "i18next-http-middleware": "^3.6.0"
   }
 }

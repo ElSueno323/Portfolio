@@ -15,8 +15,8 @@ export default {
     NavigationVue,
     HomeVue
   },
-
 }
+
 </script>
 
 <style>
