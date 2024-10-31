@@ -4,13 +4,50 @@
       "Home",
       "About",
       "Skills",
+      "Portfolio",
       "Contact"
     ],
     "greeting": {
-      "title": "Hello",
-      "name": "I'm {{ firstname }} {{ lastname}} ",
-      "job": "{{job}}",
-      "country_info": "From {{country}}"
+      "title": "Hello,",
+      "name": "I'm",
+      "firstname": "Gabriel",
+      "lastname": "Espinosa",
+      "job": "Web/Software Developer",
+      "country_info": "From",
+      "country": "Belgium"
+    },
+    "about": {
+      "title_about": "About me",
+      "content_about": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. Donec vestibulum vulputate dapibus. Phasellus interdum vel tellus eget fermentum. Vestibulum quis mi consequat libero aliquet euismod. Curabitur ornare porta egestas. Nulla euismod, nisi eget dapibus imperdiet, dui ligula efficitur diam, at suscipit nibh lectus id est. Integer rutrum, nibh sed lacinia tincidunt, turpis nisi rutrum nisi, at gravida nisl tellus a ante. Proin pharetra augue sed nisl fringilla, at efficitur orci rhoncus. Pellentesque id eleifend lectus. Aliquam vel quam faucibus, fringilla sem nec, pulvinar turpis. Proin efficitur felis euismod urna elementum finibus. Phasellus ultrices eros id orci blandit, a molestie sapien pulvinar.",
+      "title_education": "Education",
+      "content_education": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. ",
+      "firstname": "Gabriel",
+      "lastname": "Espinosa"
+    },
+    "skills": {
+      "title": "Skills",
+      "spoken_level": {
+        "french": {
+          "name":"French",
+          "level": "Native"
+        },
+        "english": {
+          "name":"English",
+          "level": "Conversational"
+        },
+        "spanish": {
+          "name":"Spanish",
+          "level": "Fluent"
+        },
+        "portuguese": {
+          "name":"Portuguese",
+          "level": "Fluent"
+        }
+      },
+      "title_tools": "Tools Box",
+      "cat_professional": "Professional",
+      "cat_school": "School Project",
+      "cat_personal": "Personal Project"
     },
     "button": {
       "hire": "Hire Me",

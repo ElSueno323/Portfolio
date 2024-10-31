@@ -6,24 +6,40 @@
 
   <div class="container">
     <div class="container_top_left">
-      {{  $i18n.messages.msg.translation.content.greeting }}
-      <h1>{{  $i18n.messages.msg.translation.content.greeting.title }}</h1>
-      <h1>{{  $i18n.messages.msg.translation.content.greeting.name }}</h1>
-      <h2>{{  $i18n.messages.msg.translation.content.greeting.job }}</h2>
-      <h5>{{  $i18n.messages.msg.translation.content.greeting.country_info }}</h5>
+      <h2>
+        {{  $i18n.messages.msg.translation.content.greeting.title }}
+      </h2>
+      <h1>
+        {{  $i18n.messages.msg.translation.content.greeting.name }}
+        <span class="colored">
+          {{$i18n.messages.msg.translation.content.greeting.firstname}} {{$i18n.messages.msg.translation.content.greeting.lastname}}
+        </span>
+      </h1>
+      <h2>
+        {{  $i18n.messages.msg.translation.content.greeting.job }}
+      </h2>
+      <h6 class="colored">
+        {{  $i18n.messages.msg.translation.content.greeting.country_info  }} {{$i18n.messages.msg.translation.content.greeting.country}}
+      </h6>
     </div>
 
     <div class="container_left_bottom">
-      <b-button class="gradient-button">
-        {{  $i18n.messages.msg.translation.content.button.hire }}
-      </b-button>
-      <b-button class="custom-reverse-button">
-        {{  $i18n.messages.msg.translation.content.button.cv }}
-      </b-button>
+      <div>
+        <b-button class="gradient-button">
+          {{  $i18n.messages.msg.translation.content.button.hire }}
+        </b-button>
+      </div>
+      <div>
+        <b-button class="custom-reverse-button">
+          {{  $i18n.messages.msg.translation.content.button.cv }}
+        </b-button>
+      </div>
     </div>
 
     <div class="container_right">
-      <BBadge>qsd</BBadge>
+      <div class="full_height">
+        <img class="portrait" alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}" src="../assets/portrait_blanc.jpg">
+      </div>
     </div>
 
   </div>
@@ -31,29 +47,49 @@
 </template>
 
 <style scoped>
+
   .container{
     display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
   }
   .container_top_left {
     text-align: left;
     grid-column: 1;
     grid-row: 1;
-    background-color: #46502c;
   }
   .container_left_bottom {
     grid-column: 1;
     grid-row: 2;
+    display: flex;
   }
+
   .container_right {
     grid-column: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: blanchedalmond;
+    display: grid;
+  }
+  .full_height{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .portrait {
+    height: 50%;
+    border: #017d8f 5px solid;
+    color: navajowhite !important;
+  }
+  img{
+    background: navajowhite !important;
   }
 
   .custom-reverse-button {
     position: relative;
-    font-size: 24px;
+    font-size: 3vh;
     font-weight: bold;
     color: transparent;
     background: var(--nav-active-background);
@@ -83,7 +119,7 @@
   }
 
   .gradient-button {
-    font-size: 24px;
+    font-size: 3vh;
     background: var(--nav-active-background);
     font-weight: bold;
     color: white;

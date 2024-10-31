@@ -1,36 +1,41 @@
 <template>
-  <NavigationVue/>
-  <HomeVue/>
+  <div class="main">
+    <NavigationVue @navigate="navigateTo"/>
+    <router-view/>
+  </div>
 </template>
 
 <script>
-// import Portfolio from './components/Portfolio.vue'
 import NavigationVue from '@/components/NavigationVue.vue';
-import HomeVue from '@/components/HomeVue.vue';
-
 export default {
   name: 'App',
   components: {
-    // Portfolio,
     NavigationVue,
-    HomeVue
   },
+  methods: {
+    navigateTo (route) {
+      route=route.toLowerCase();
+      if(route === "home"){
+        route="/";
+      }
+      this.$router.push({ path: route.toLowerCase() });
+    }
+  }
 }
 
 </script>
 
-<style>
+<style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 1rem;
 }
 
 :root {
-  --nav-active-background: linear-gradient(45deg, #34ab3d, #1a00f5);
+  --nav-active-background: linear-gradient(70deg, #34ab3d, #0072f5);
+  --nav-default-background: linear-gradient(25deg, #34ab3d, #0072f5);
 }
 .custom-background {
   background: var(--nav-active-background);
@@ -38,12 +43,12 @@ export default {
   border: None;
 }
 
-.gradient-button {
-  background: linear-gradient(45deg, #34ab3d, #1a00f5); /* Dégradé de couleur */
-  -webkit-background-clip: text; /* Pour Chrome/Safari */
-  background-clip: text; /* Pour les autres navigateurs */
-  border: 2px solid transparent;
+.colored{
+  font-weight: bold;
   color: transparent;
+  background: var(--nav-active-background);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .nav-item .nav-link.active{
@@ -53,12 +58,30 @@ export default {
 
 
 .nav-item:not(.active) .nav-link:hover{
-  background: var(--nav-active-background);
+  background: var(--nav-default-background);
   transition: background-color 1s,color 1s ;
   border-bottom: none;
   color: white !important;
 }
 
+.nav-item .nav-link{
+  color: black;
+}
 
+.nav-item:focus-within {
+  border: none;
+}
 
+.nav-link:focus-within{
+  color: white !important;
+  background: var(--nav-default-background);
+  border-bottom: none !important;
+}
+
+.container{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem;
+}
 </style>
