@@ -29,194 +29,282 @@
       "title_languages": "Spoken Languages",
       "spoken_languages": {
         "french": {
-          "name":"French",
+          "name": "French",
           "level": "Native",
           "icon": "fr"
         },
         "spanish": {
-          "name":"Spanish",
+          "name": "Spanish",
           "level": "Fluent",
           "icon": "es"
         },
         "portuguese": {
-          "name":"Portuguese",
+          "name": "Portuguese",
           "level": "Fluent",
           "icon": "pt"
         },
         "english": {
-          "name":"English",
+          "name": "English",
           "level": "Conversational",
           "icon": "gb"
         }
-
       },
       "title_tools": "Tools Box",
       "cat_professional": "Professional",
       "icon_professional": {
         "typescript": {
           "name": "TypeScript",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-          "about": "TypeScript is an open-source programming language developed by Microsoft. It is a superset of JavaScript that adds static typing and advanced features to support large application development."
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+          "about": "TypeScript is an open-source programming language developed by Microsoft. It is a superset of JavaScript that adds static typing and advanced features to support large application development.",
+          "url": "https://www.typescriptlang.org/"
         },
         "html": {
           "name": "HTML",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-          "about": "HTML (HyperText Markup Language) is the standard language used to structure and display content on web pages across the internet."
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+          "about": "HTML (HyperText Markup Language) is the standard language used to structure and display content on web pages across the internet.",
+          "url": "https://html.spec.whatwg.org/"
         },
         "css": {
           "name": "CSS",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-          "about": "CSS (Cascading Style Sheets) is a styling language used to describe the appearance and formatting of HTML documents, including colors, fonts, layout, and more."
+          "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+          "about": "CSS (Cascading Style Sheets) is a styling language used to describe the appearance and formatting of HTML documents, including colors, fonts, layout, and more.",
+          "url": "https://www.w3.org/Style/CSS/Overview.en.html"
         },
         "javascript": {
           "name": "JavaScript",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png",
-          "about": "JavaScript is a programming language widely used to create interactive web pages, allowing for DOM manipulation, animations, and asynchronous requests."
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png",
+          "about": "JavaScript is a programming language widely used to create interactive web pages, allowing for DOM manipulation, animations, and asynchronous requests.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
         },
         "nodejs": {
           "name": "Node.js",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Font_Awesome_5_brands_node-js.svg",
-          "about": "Node.js is a JavaScript runtime environment that allows for server-side application development using an event-driven, non-blocking model for scalability."
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Font_Awesome_5_brands_node-js.svg",
+          "about": "Node.js is a JavaScript runtime environment that allows for server-side application development using an event-driven, non-blocking model for scalability.",
+          "url": "https://nodejs.org/"
         },
         "express": {
           "name": "Express",
-          "url": "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
-          "about": "Express is a minimalist web framework for Node.js, providing a lightweight and flexible structure to build web applications and APIs."
+          "image": "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
+          "about": "Express is a minimalist web framework for Node.js, providing a lightweight and flexible structure to build web applications and APIs.",
+          "url": "https://expressjs.com/"
         },
         "git": {
           "name": "Git",
-          "url": "https://blog.lecacheur.com/wp-content/uploads/2014/10/git_logo.png",
-          "about": "Git is a distributed version control system used to track code changes and facilitate collaboration among developers."
+          "image": "https://blog.lecacheur.com/wp-content/uploads/2014/10/git_logo.png",
+          "about": "Git is a distributed version control system used to track code changes and facilitate collaboration among developers.",
+          "url": "https://git-scm.com/"
         },
         "github": {
           "name": "GitHub",
-          "url": "https://les-tilleuls.coop/wp-content/uploads/2023/02/25231.png",
-          "about": "GitHub is a platform that hosts source code, providing project management, version control, and collaboration features for developers."
+          "image": "https://les-tilleuls.coop/wp-content/uploads/2023/02/25231.png",
+          "about": "GitHub is a platform that hosts source code, providing project management, version control, and collaboration features for developers.",
+          "url": "https://github.com/"
         },
         "postman": {
           "name": "Postman",
-          "url": "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8",
-          "about": "Postman is a collaborative tool for API development, enabling users to create, test, and document APIs efficiently."
+          "image": "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8",
+          "about": "Postman is a collaborative tool for API development, enabling users to create, test, and document APIs efficiently.",
+          "url": "https://www.postman.com/"
         },
         "datagrip": {
           "name": "DataGrip",
-          "url": "https://cdn.icon-icons.com/icons2/3053/PNG/512/intellij_datagrip_macos_bigsur_icon_190058.png",
-          "about": "DataGrip is an IDE developed by JetBrains for databases, offering advanced features for managing, querying, and maintaining databases."
+          "image": "https://cdn.icon-icons.com/icons2/3053/PNG/512/intellij_datagrip_macos_bigsur_icon_190058.png",
+          "about": "DataGrip is an IDE developed by JetBrains for databases, offering advanced features for managing, querying, and maintaining databases.",
+          "url": "https://www.jetbrains.com/datagrip/"
         },
         "webstorm": {
           "name": "WebStorm",
-          "url": "https://static-00.iconduck.com/assets.00/webstorm-icon-512x512-lmof1hfg.png",
-          "about": "WebStorm is a JetBrains IDE specialized for web development, with strong support for JavaScript, TypeScript, and frameworks like React, Angular, and Vue.js."
+          "image": "https://static-00.iconduck.com/assets.00/webstorm-icon-512x512-lmof1hfg.png",
+          "about": "WebStorm is a JetBrains IDE specialized for web development, with strong support for JavaScript, TypeScript, and frameworks like React, Angular, and Vue.js.",
+          "url": "https://www.jetbrains.com/webstorm/"
         },
         "space": {
           "name": "Space",
-          "url": "https://resources.jetbrains.com/storage/products/space/img/meta/logo.png",
-          "about": "JetBrains Space is an all-in-one platform for project management and team collaboration, featuring code hosting, CI/CD tools, and team communication."
+          "image": "https://resources.jetbrains.com/storage/products/space/img/meta/logo.png",
+          "about": "JetBrains Space is an all-in-one platform for project management and team collaboration, featuring code hosting, CI/CD tools, and team communication.",
+          "url": "https://www.jetbrains.com/space/"
         },
         "postgresql": {
           "name": "PostgreSQL",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png",
-          "about": "PostgreSQL is an open-source relational database management system known for its reliability, extensibility, and adherence to SQL standards."
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png",
+          "about": "PostgreSQL is an open-source relational database management system known for its reliability, extensibility, and adherence to SQL standards.",
+          "url": "https://www.postgresql.org/"
         },
         "aws_s3": {
           "name": "Amazon S3",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/1712px-Amazon-S3-Logo.svg.png",
-          "about": "Amazon S3 (Simple Storage Service) is an AWS object storage service that enables scalable data storage and retrieval."
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/1712px-Amazon-S3-Logo.svg.png",
+          "about": "Amazon S3 (Simple Storage Service) is an AWS object storage service that enables scalable data storage and retrieval.",
+          "url": "https://aws.amazon.com/s3/"
         },
         "aws_ec2": {
           "name": "Amazon EC2",
-          "url": "https://static-00.iconduck.com/assets.00/aws-ec2-icon-1696x2048-nhw31ife.png",
-          "about": "Amazon EC2 (Elastic Compute Cloud) is an AWS service providing scalable virtual servers to run cloud-based applications."
+          "image": "https://static-00.iconduck.com/assets.00/aws-ec2-icon-1696x2048-nhw31ife.png",
+          "about": "Amazon EC2 (Elastic Compute Cloud) is an AWS service providing scalable virtual servers to run cloud-based applications.",
+          "url": "https://aws.amazon.com/ec2/"
         },
         "ZOD": {
           "name": "Zod",
-          "url": "https://seeklogo.com/images/Z/zod-logo-B57E684330-seeklogo.com.png",
-          "about": "Zod is a TypeScript schema declaration and validation library that provides strict typing and advanced data validation tools."
+          "image": "https://seeklogo.com/images/Z/zod-logo-B57E684330-seeklogo.com.png",
+          "about": "Zod is a TypeScript schema declaration and validation library that provides strict typing and advanced data validation tools.",
+          "url": "https://zod.dev/"
         },
         "github_action": {
           "name": "GitHub Actions",
-          "url": "https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png",
-          "about": "GitHub Actions is GitHub’s automation service that enables custom workflows for CI/CD, continuous integration, and other automated processes."
+          "image": "https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png",
+          "about": "GitHub Actions is GitHub’s automation service that enables custom workflows for CI/CD, continuous integration, and other automated processes.",
+          "url": "https://github.com/features/actions"
         }
       },
+
 
       "cat_school": "School Project",
       "icon_school": {
         "sql": {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg"
+          "name": "SQL",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg",
+          "about": "SQL (Structured Query Language) is a standardized language for managing and manipulating relational databases, used for querying and updating data.",
+          "url": "https://www.iso.org/standard/63555.html"
         },
         "chatgpt": {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/800px-ChatGPT-Logo.svg.png"
+          "name": "ChatGPT",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/800px-ChatGPT-Logo.svg.png",
+          "about": "ChatGPT is an AI language model developed by OpenAI, capable of generating human-like text based on input prompts.",
+          "url": "https://openai.com/chatgpt"
         },
         "visual_studio_code": {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"
+          "name": "Visual Studio Code",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png",
+          "about": "Visual Studio Code is a free, open-source code editor developed by Microsoft, known for its extensions, debugging, and integrated terminal support.",
+          "url": "https://code.visualstudio.com/"
         },
         "docker": {
-          "url": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/docker-icon.png"
+          "name": "Docker",
+          "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/docker-icon.png",
+          "about": "Docker is an open platform for developing, shipping, and running applications inside lightweight, portable containers.",
+          "url": "https://www.docker.com/"
         },
         "mariadb": {
-          "url": "https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent.png"
+          "name": "MariaDB",
+          "image": "https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent.png",
+          "about": "MariaDB is an open-source relational database management system that is compatible with MySQL and provides powerful database features.",
+          "url": "https://mariadb.org/"
         },
         "bootstrap": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-bootstrap-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226077.png"
+          "name": "Bootstrap",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-bootstrap-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226077.png",
+          "about": "Bootstrap is a front-end framework that helps in designing responsive websites quickly with its pre-styled HTML, CSS, and JavaScript components.",
+          "url": "https://getbootstrap.com/"
         },
         "java": {
-          "url": "https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png"
+          "name": "Java",
+          "image": "https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png",
+          "about": "Java is a high-level, object-oriented programming language widely used for building cross-platform applications, especially server-side applications.",
+          "url": "https://www.oracle.com/java/"
         },
-
         "jquery": {
-          "url": "https://seeklogo.com/images/J/jquery-logo-CFE6ECE363-seeklogo.com.png"
+          "name": "jQuery",
+          "image": "https://seeklogo.com/images/J/jquery-logo-CFE6ECE363-seeklogo.com.png",
+          "about": "jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation, event handling, and animation.",
+          "url": "https://jquery.com/"
         },
         "mysql": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-mysql-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945040.png"
+          "name": "MySQL",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-mysql-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945040.png",
+          "about": "MySQL is an open-source relational database management system known for its reliability and ease of use in data management.",
+          "url": "https://www.mysql.com/"
         },
         "gitlab": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-gitlab-282507.png?f=webp"
+          "name": "GitLab",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-gitlab-282507.png?f=webp",
+          "about": "GitLab is a DevOps platform that provides version control, CI/CD, and collaborative development tools, all in one platform.",
+          "url": "https://about.gitlab.com/"
         },
         "virtualbox": {
-          "url": "https://cdn.icon-icons.com/icons2/195/PNG/256/VirtualBox_23525.png"
+          "name": "VirtualBox",
+          "image": "https://cdn.icon-icons.com/icons2/195/PNG/256/VirtualBox_23525.png",
+          "about": "VirtualBox is an open-source virtualization software that allows users to run multiple operating systems on a single machine.",
+          "url": "https://www.virtualbox.org/"
         },
         "intellij": {
-          "url": "https://static-00.iconduck.com/assets.00/intellij-idea-icon-256x256-588q8493.png"
+          "name": "IntelliJ IDEA",
+          "image": "https://static-00.iconduck.com/assets.00/intellij-idea-icon-256x256-588q8493.png",
+          "about": "IntelliJ IDEA is a Java-centric integrated development environment (IDE) by JetBrains, known for its smart code assistance and productivity tools.",
+          "url": "https://www.jetbrains.com/idea/"
         },
         "c++": {
-          "url": "https://cdn-icons-png.flaticon.com/256/6132/6132222.png"
+          "name": "C++",
+          "image": "https://cdn-icons-png.flaticon.com/256/6132/6132222.png",
+          "about": "C++ is a powerful general-purpose programming language, an extension of C, widely used in system software, game development, and real-time applications.",
+          "url": "https://isocpp.org/"
         },
         "c": {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
+          "name": "C",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+          "about": "C is a foundational programming language known for its efficiency and flexibility in system programming and low-level applications.",
+          "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
         },
         "clion": {
-          "url": "https://static-00.iconduck.com/assets.00/clion-icon-256x256-zaezakn1.png"
+          "name": "CLion",
+          "image": "https://static-00.iconduck.com/assets.00/clion-icon-256x256-zaezakn1.png",
+          "about": "CLion is a cross-platform IDE for C and C++ development, featuring smart code completion, refactoring, and debugging tools.",
+          "url": "https://www.jetbrains.com/clion/"
         },
         "trello": {
-          "url":"https://cdn-icons-png.flaticon.com/256/174/174874.png"
+          "name": "Trello",
+          "image": "https://cdn-icons-png.flaticon.com/256/174/174874.png",
+          "about": "Trello is a collaborative project management tool that uses boards, lists, and cards to organize and prioritize tasks.",
+          "url": "https://trello.com/"
         },
         "android_studio": {
-          "url":"https://cdn.iconscout.com/icon/free/png-256/free-android-studio-logo-icon-download-in-svg-png-gif-file-formats--brand-pack-logos-icons-2701880.png"
+          "name": "Android Studio",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-android-studio-logo-icon-download-in-svg-png-gif-file-formats--brand-pack-logos-icons-2701880.png",
+          "about": "Android Studio is the official IDE for Android app development, providing tools for building, testing, and debugging Android applications.",
+          "url": "https://developer.android.com/studio"
         },
         "kotlin": {
-          "url": "https://static-00.iconduck.com/assets.00/jb-kotlin-icon-256x256-a8rrb85x.png"
+          "name": "Kotlin",
+          "image": "https://static-00.iconduck.com/assets.00/jb-kotlin-icon-256x256-a8rrb85x.png",
+          "about": "Kotlin is a modern, statically typed programming language that interoperates with Java, commonly used for Android and multiplatform development.",
+          "url": "https://kotlinlang.org/"
         },
         "laravel": {
-          "url": "https://jaki-jezyk-programowania.pl/img/technologies/laravel.png"
+          "name": "Laravel",
+          "image": "https://jaki-jezyk-programowania.pl/img/technologies/laravel.png",
+          "about": "Laravel is a PHP web framework known for its elegant syntax, MVC architecture, and features that simplify web application development.",
+          "url": "https://laravel.com/"
         },
         "php": {
-          "url": "https://static-00.iconduck.com/assets.00/php-icon-256x256-oq5bc0bt.png"
+          "name": "PHP",
+          "image": "https://static-00.iconduck.com/assets.00/php-icon-256x256-oq5bc0bt.png",
+          "about": "PHP is a widely-used open-source scripting language that is especially suited for web development and can be embedded into HTML.",
+          "url": "https://www.php.net/"
         },
         "python": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-python-2-226051.png?f=webp"
+          "name": "Python",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-python-2-226051.png?f=webp",
+          "about": "Python is a versatile, high-level programming language known for its readability, ease of learning, and strong support for various applications.",
+          "url": "https://www.python.org/"
         },
         "django": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-django-11-1175036.png?f=webp"
+          "name": "Django",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-django-11-1175036.png?f=webp",
+          "about": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+          "url": "https://www.djangoproject.com/"
         },
         "odoo": {
-          "url": "https://www.shareicon.net/data/256x256/2015/10/06/112722_development_512x512.png"
+          "name": "Odoo",
+          "image": "https://www.shareicon.net/data/256x256/2015/10/06/112722_development_512x512.png",
+          "about": "Odoo is an open-source ERP system that provides a suite of business applications such as CRM, e-commerce, accounting, and inventory management.",
+          "url": "https://www.odoo.com/"
         },
         "windows": {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png"
+          "name": "Windows",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png",
+          "about": "Windows is a family of operating systems developed by Microsoft, widely used for personal computers, tablets, and servers.",
+          "url": "https://www.microsoft.com/windows"
         }
-
       },
+
       "cat_personal": "Personal Project",
       "icon_personal": {
         "discord": {
