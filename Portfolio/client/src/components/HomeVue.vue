@@ -23,7 +23,7 @@
       </h6>
     </div>
 
-    <div class="container_left_bottom">
+    <div class="container_button">
       <div>
         <b-button class="gradient-button">
           {{  $i18n.messages.msg.translation.content.button.hire }}
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <div class="container_right">
+    <div class="container_top_right">
       <div class="full_height">
         <img class="portrait" alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}" src="../assets/portrait_blanc.jpg">
       </div>
@@ -59,13 +59,13 @@
     grid-column: 1;
     grid-row: 1;
   }
-  .container_left_bottom {
+  .container_button {
     grid-column: 1;
     grid-row: 2;
     display: flex;
   }
 
-  .container_right {
+  .container_top_right {
     grid-column: 2;
     grid-row-start: 1;
     grid-row-end: 3;

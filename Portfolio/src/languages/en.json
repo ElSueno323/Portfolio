@@ -26,28 +26,215 @@
     },
     "skills": {
       "title": "Skills",
-      "spoken_level": {
+      "title_languages": "Spoken Languages",
+      "spoken_languages": {
         "french": {
           "name":"French",
-          "level": "Native"
-        },
-        "english": {
-          "name":"English",
-          "level": "Conversational"
+          "level": "Native",
+          "icon": "fr"
         },
         "spanish": {
           "name":"Spanish",
-          "level": "Fluent"
+          "level": "Fluent",
+          "icon": "es"
         },
         "portuguese": {
           "name":"Portuguese",
-          "level": "Fluent"
+          "level": "Fluent",
+          "icon": "pt"
+        },
+        "english": {
+          "name":"English",
+          "level": "Conversational",
+          "icon": "gb"
         }
+
       },
       "title_tools": "Tools Box",
       "cat_professional": "Professional",
+      "icon_professional": {
+        "typescript": {
+          "name": "TypeScript",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+          "about": "TypeScript is an open-source programming language developed by Microsoft. It is a superset of JavaScript that adds static typing and advanced features to support large application development."
+        },
+        "html": {
+          "name": "HTML",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+          "about": "HTML (HyperText Markup Language) is the standard language used to structure and display content on web pages across the internet."
+        },
+        "css": {
+          "name": "CSS",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+          "about": "CSS (Cascading Style Sheets) is a styling language used to describe the appearance and formatting of HTML documents, including colors, fonts, layout, and more."
+        },
+        "javascript": {
+          "name": "JavaScript",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png",
+          "about": "JavaScript is a programming language widely used to create interactive web pages, allowing for DOM manipulation, animations, and asynchronous requests."
+        },
+        "nodejs": {
+          "name": "Node.js",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Font_Awesome_5_brands_node-js.svg",
+          "about": "Node.js is a JavaScript runtime environment that allows for server-side application development using an event-driven, non-blocking model for scalability."
+        },
+        "express": {
+          "name": "Express",
+          "url": "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
+          "about": "Express is a minimalist web framework for Node.js, providing a lightweight and flexible structure to build web applications and APIs."
+        },
+        "git": {
+          "name": "Git",
+          "url": "https://blog.lecacheur.com/wp-content/uploads/2014/10/git_logo.png",
+          "about": "Git is a distributed version control system used to track code changes and facilitate collaboration among developers."
+        },
+        "github": {
+          "name": "GitHub",
+          "url": "https://les-tilleuls.coop/wp-content/uploads/2023/02/25231.png",
+          "about": "GitHub is a platform that hosts source code, providing project management, version control, and collaboration features for developers."
+        },
+        "postman": {
+          "name": "Postman",
+          "url": "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8",
+          "about": "Postman is a collaborative tool for API development, enabling users to create, test, and document APIs efficiently."
+        },
+        "datagrip": {
+          "name": "DataGrip",
+          "url": "https://cdn.icon-icons.com/icons2/3053/PNG/512/intellij_datagrip_macos_bigsur_icon_190058.png",
+          "about": "DataGrip is an IDE developed by JetBrains for databases, offering advanced features for managing, querying, and maintaining databases."
+        },
+        "webstorm": {
+          "name": "WebStorm",
+          "url": "https://static-00.iconduck.com/assets.00/webstorm-icon-512x512-lmof1hfg.png",
+          "about": "WebStorm is a JetBrains IDE specialized for web development, with strong support for JavaScript, TypeScript, and frameworks like React, Angular, and Vue.js."
+        },
+        "space": {
+          "name": "Space",
+          "url": "https://resources.jetbrains.com/storage/products/space/img/meta/logo.png",
+          "about": "JetBrains Space is an all-in-one platform for project management and team collaboration, featuring code hosting, CI/CD tools, and team communication."
+        },
+        "postgresql": {
+          "name": "PostgreSQL",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png",
+          "about": "PostgreSQL is an open-source relational database management system known for its reliability, extensibility, and adherence to SQL standards."
+        },
+        "aws_s3": {
+          "name": "Amazon S3",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/1712px-Amazon-S3-Logo.svg.png",
+          "about": "Amazon S3 (Simple Storage Service) is an AWS object storage service that enables scalable data storage and retrieval."
+        },
+        "aws_ec2": {
+          "name": "Amazon EC2",
+          "url": "https://static-00.iconduck.com/assets.00/aws-ec2-icon-1696x2048-nhw31ife.png",
+          "about": "Amazon EC2 (Elastic Compute Cloud) is an AWS service providing scalable virtual servers to run cloud-based applications."
+        },
+        "ZOD": {
+          "name": "Zod",
+          "url": "https://seeklogo.com/images/Z/zod-logo-B57E684330-seeklogo.com.png",
+          "about": "Zod is a TypeScript schema declaration and validation library that provides strict typing and advanced data validation tools."
+        },
+        "github_action": {
+          "name": "GitHub Actions",
+          "url": "https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png",
+          "about": "GitHub Actions is GitHub’s automation service that enables custom workflows for CI/CD, continuous integration, and other automated processes."
+        }
+      },
+
       "cat_school": "School Project",
-      "cat_personal": "Personal Project"
+      "icon_school": {
+        "sql": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg"
+        },
+        "chatgpt": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/800px-ChatGPT-Logo.svg.png"
+        },
+        "visual_studio_code": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"
+        },
+        "docker": {
+          "url": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/docker-icon.png"
+        },
+        "mariadb": {
+          "url": "https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent.png"
+        },
+        "bootstrap": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-bootstrap-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226077.png"
+        },
+        "java": {
+          "url": "https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png"
+        },
+
+        "jquery": {
+          "url": "https://seeklogo.com/images/J/jquery-logo-CFE6ECE363-seeklogo.com.png"
+        },
+        "mysql": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-mysql-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945040.png"
+        },
+        "gitlab": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-gitlab-282507.png?f=webp"
+        },
+        "virtualbox": {
+          "url": "https://cdn.icon-icons.com/icons2/195/PNG/256/VirtualBox_23525.png"
+        },
+        "intellij": {
+          "url": "https://static-00.iconduck.com/assets.00/intellij-idea-icon-256x256-588q8493.png"
+        },
+        "c++": {
+          "url": "https://cdn-icons-png.flaticon.com/256/6132/6132222.png"
+        },
+        "c": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
+        },
+        "clion": {
+          "url": "https://static-00.iconduck.com/assets.00/clion-icon-256x256-zaezakn1.png"
+        },
+        "trello": {
+          "url":"https://cdn-icons-png.flaticon.com/256/174/174874.png"
+        },
+        "android_studio": {
+          "url":"https://cdn.iconscout.com/icon/free/png-256/free-android-studio-logo-icon-download-in-svg-png-gif-file-formats--brand-pack-logos-icons-2701880.png"
+        },
+        "kotlin": {
+          "url": "https://static-00.iconduck.com/assets.00/jb-kotlin-icon-256x256-a8rrb85x.png"
+        },
+        "laravel": {
+          "url": "https://jaki-jezyk-programowania.pl/img/technologies/laravel.png"
+        },
+        "php": {
+          "url": "https://static-00.iconduck.com/assets.00/php-icon-256x256-oq5bc0bt.png"
+        },
+        "python": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-python-2-226051.png?f=webp"
+        },
+        "django": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-django-11-1175036.png?f=webp"
+        },
+        "odoo": {
+          "url": "https://www.shareicon.net/data/256x256/2015/10/06/112722_development_512x512.png"
+        },
+        "windows": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png"
+        }
+
+      },
+      "cat_personal": "Personal Project",
+      "icon_personal": {
+        "discord": {
+          "url": "https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png"
+        },
+        "arduino": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-arduino-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226072.png?f=webp&w=256"
+        },
+        "unity": {
+          "url": "https://cdn-icons-png.flaticon.com/256/5969/5969346.png"
+        },
+        "csharp": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-csharp-1175240.png?f=webp"
+        },
+        "ubuntu": {
+          "url": "https://cdn.iconscout.com/icon/free/png-256/free-ubuntu-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175076.png?f=webp&w=256"
+        }
+      }
     },
     "button": {
       "hire": "Hire Me",
