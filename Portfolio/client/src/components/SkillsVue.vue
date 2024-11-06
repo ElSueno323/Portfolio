@@ -17,7 +17,8 @@
         <ul>
           <div
             v-for="content in $i18n.messages.msg.translation.content.skills.spoken_languages"
-            :key="content">
+            :key="content"
+          class="spoken_languages">
               <span>{{ content.name }}</span> <span> - </span> <span>{{ content.level }}</span>
             <flag :iso="content.icon" />
           </div>
@@ -91,13 +92,24 @@
   display: grid;
   margin: 3vh;
   align-self: center;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #0072f5;
 }
 
 .container_languages {
   margin-top: 2vh;
   margin-bottom: 3vh;
-
+  background: var(--nav-active-background);
+  color: white;
+  border-radius: 5px;
 }
+
+.spoken_languages{
+  display: flex;
+  gap:2vh;
+}
+
 .container_icon {
   display: grid;
 }
@@ -106,6 +118,18 @@
   margin: 1vh;
   display: flex;
   flex-wrap: wrap;
+}
+
+.container_tools {
+  background: var(--nav-active-background);
+  color: white;
+}
+
+h6{
+  background: white;
+  color: black;
+  padding: 1vh;
+  font-weight: bold;
 }
 
 img {

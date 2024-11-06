@@ -155,8 +155,6 @@
           "url": "https://github.com/features/actions"
         }
       },
-
-
       "cat_school": "School Project",
       "icon_school": {
         "sql": {
@@ -304,7 +302,6 @@
           "url": "https://www.microsoft.com/windows"
         }
       },
-
       "cat_personal": "Personal Project",
       "icon_personal": {
         "discord": {
@@ -324,9 +321,44 @@
         }
       }
     },
+    "portfolio": {
+      "title": "Portfolio",
+      "projects": {
+        "first": {
+          "name": "Stratego",
+          "description": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. Donec vestibulum vulputate dapibus. Phasellus interdum vel tellus eget fermentum. Vestibulum quis mi consequat libero aliquet euismod. Curabitur ornare porta egestas. Nulla euismod, nisi eget dapibus imperdiet, dui ligula efficitur diam, at suscipit nibh lectus id est. Integer rutrum, nibh sed lacinia tincidunt, turpis nisi rutrum nisi, at gravida nisl tellus a ante. Proin pharetra augue sed nisl fringilla, at efficitur orci rhoncus. Pellentesque id eleifend lectus. Aliquam vel quam faucibus, fringilla sem nec, pulvinar turpis. Proin efficitur felis euismod urna elementum finibus. Phasellus ultrices eros id orci blandit, a molestie sapien pulvinar.",
+          "tech": {
+            "sql": {
+              "name":"SQL"
+            },
+            "ts": {
+              "name":"TypeScript"
+            }
+          },
+          "url": "https://github.com/ElSueno323/Stratego",
+          "picture": "rm.jpg"
+        },
+        "second": {
+          "name": "Lucky Number",
+          "description": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. Donec vestibulum vulputate dapibus. Phasellus interdum vel tellus eget fermentum. Vestibulum quis mi consequat libero aliquet euismod. Curabitur ornare porta egestas. Nulla euismod, nisi eget dapibus imperdiet, dui ligula efficitur diam, at suscipit nibh lectus id est. Integer rutrum, nibh sed lacinia tincidunt, turpis nisi rutrum nisi, at gravida nisl tellus a ante. Proin pharetra augue sed nisl fringilla, at efficitur orci rhoncus. Pellentesque id eleifend lectus. Aliquam vel quam faucibus, fringilla sem nec, pulvinar turpis. Proin efficitur felis euismod urna elementum finibus. Phasellus ultrices eros id orci blandit, a molestie sapien pulvinar.",
+          "tech": {
+            "js": {
+              "name":"Javascript"
+            },
+            "css": {
+              "name": "CSS"
+            }
+          },
+          "url": "https://github.com/ElSueno323/Stratego",
+          "picture": "portrait.png"
+        },
+        "subtitle_tech": "TECH STACK"
+      }
+    },
     "button": {
       "hire": "Hire Me",
-      "cv": "Get CV"
+      "cv": "Get CV",
+      "portfolio": "Take a Look"
     }
   }
 }

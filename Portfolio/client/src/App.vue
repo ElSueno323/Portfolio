@@ -1,6 +1,7 @@
 <template>
   <div class="main">
     <NavigationVue @navigate="navigateTo"/>
+
     <router-view/>
   </div>
 </template>

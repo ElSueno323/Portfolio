@@ -38,7 +38,7 @@
 
     <div class="container_top_right">
       <div class="full_height">
-        <img class="portrait" alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}" src="../assets/portrait_blanc.jpg">
+        <img class="portrait" alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}" src="../assets/portrait_normale.jpg">
       </div>
     </div>
 
