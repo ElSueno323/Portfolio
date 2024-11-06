@@ -22,9 +22,10 @@
 
 #nav_body{
   height: 100%;
-  position: sticky !important;
+  position: sticky;
   top: 0;
   background-color: white;
+  z-index: 9999;
 }
 
 #header-line {

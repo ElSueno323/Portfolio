@@ -4,7 +4,7 @@
 
 <template>
 
-  <div class="container">
+  <div class="container" id="home">
     <div class="container_top_left">
       <h2>
         {{  $i18n.messages.msg.translation.content.greeting.title }}
@@ -50,8 +50,7 @@
 
   .container{
     display: grid;
-    height: 100%;
-    width: 100%;
+    height: 50rem;
     margin-top: 2rem;
   }
   .container_top_left {
@@ -72,19 +71,19 @@
     display: grid;
   }
   .full_height{
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 3vh;
   }
   .portrait {
-    height: 50%;
     border: #017d8f 5px solid;
     color: navajowhite !important;
   }
   img{
     background: navajowhite !important;
+
+    height: 30rem ;
   }
 
   .custom-reverse-button {

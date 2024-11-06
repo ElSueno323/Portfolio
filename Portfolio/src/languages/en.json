@@ -355,6 +355,28 @@
         "subtitle_tech": "TECH STACK"
       }
     },
+    "contact": {
+      "title": "Contact",
+      "content": "Contact me into this link",
+      "network": {
+        "email": {
+          "name": "Email",
+          "link": "mailto:san.esp.gab.br@gmail.com",
+          "logo": "https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--mail-envelope-message-miscellaneous-pack-icons-1713291.png"
+        },
+        "github": {
+          "name": "GitHub",
+          "link": "https://github.com/ElSueno323",
+          "logo": "https://les-tilleuls.coop/wp-content/uploads/2023/02/25231.png"
+        },
+        "linkedin": {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/gabriel-espinosa-6834722b2/",
+          "logo": "https://cdn-icons-png.flaticon.com/256/61/61109.png"
+        }
+      }
+
+    },
     "button": {
       "hire": "Hire Me",
       "cv": "Get CV",

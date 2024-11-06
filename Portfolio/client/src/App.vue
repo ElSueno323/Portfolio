@@ -1,25 +1,34 @@
 <template>
   <div class="main">
     <NavigationVue @navigate="navigateTo"/>
-
-    <router-view/>
+    <HomeVue></HomeVue>
+    <AboutVue></AboutVue>
+    <SkillsVue></SkillsVue>
+    <PortfolioVue></PortfolioVue>
+    <ContactVue></ContactVue>
   </div>
 </template>
 
 <script>
+import HomeVue from '@/components/HomeVue.vue';
 import NavigationVue from '@/components/NavigationVue.vue';
+import AboutVue from '@/components/AboutVue.vue';
+import SkillsVue from '@/components/SkillsVue.vue';
+import PortfolioVue from '@/components/PortfolioVue.vue';
+import ContactVue from '@/components/ContactVue.vue';
 export default {
   name: 'App',
   components: {
+    ContactVue,
+    PortfolioVue,
+    SkillsVue,
+    AboutVue,
     NavigationVue,
+    HomeVue,
   },
   methods: {
     navigateTo (route) {
-      route=route.toLowerCase();
-      if(route === "home"){
-        route="/";
-      }
-      this.$router.push({ path: route.toLowerCase() });
+      document.getElementById(route.toLowerCase()).scrollIntoView({behavior:"smooth"})
     }
   }
 }
@@ -32,6 +41,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  height: 100%;
+  background-image: url("assets/back.jpg");
 }
 
 :root {
@@ -82,7 +93,9 @@ export default {
 .container{
   display: grid;
   height: 100%;
-  width: 100%;
   margin-top: 2rem;
+  background: white;
+  border-radius: 2vh;
+  border: #017d8f 5px solid;
 }
 </style>

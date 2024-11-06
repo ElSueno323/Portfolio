@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="portfolio">
     <h1>
       <span class="colored">
         {{ portfolio.title }}
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="text-center">
-          <b-button class="gradient-button" :href="actualproject.url" :title="actualproject.title" variant="success">
+          <b-button class="gradient-button" :href="actualproject.url" variant="success">
             {{  $i18n.messages.msg.translation.content.button.portfolio }}
           </b-button>
         </div>
