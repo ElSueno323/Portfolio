@@ -30,19 +30,35 @@ export default {
     navigateTo (route) {
       document.getElementById(route.toLowerCase()).scrollIntoView({behavior:"smooth"})
     }
-  }
+  },
+
 }
 
 </script>
 
 <style >
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   height: 100%;
+  position: relative;
+  color-scheme: dark;
+}
+
+#app::after{
+  content: "";
   background-image: url("assets/back.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 :root {
@@ -94,6 +110,7 @@ export default {
   display: grid;
   height: 100%;
   margin-top: 2rem;
+  padding: 1em;
   background: white;
   border-radius: 2vh;
   border: #017d8f 5px solid;

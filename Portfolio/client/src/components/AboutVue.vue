@@ -12,7 +12,7 @@
           {{  $i18n.messages.msg.translation.content.about.title_about }}
         </h2>
         <h6>
-          {{  $i18n.messages.msg.translation.content.about.content_about }}
+          {{  $i18n.messages.msg.translation.content.about.content_about }} <a href="https://tvtime.com/r/34Sj1">here</a>)
         </h6>
       </div>
 

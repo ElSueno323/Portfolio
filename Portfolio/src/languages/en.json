@@ -18,9 +18,9 @@
     },
     "about": {
       "title_about": "About me",
-      "content_about": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. Donec vestibulum vulputate dapibus. Phasellus interdum vel tellus eget fermentum. Vestibulum quis mi consequat libero aliquet euismod. Curabitur ornare porta egestas. Nulla euismod, nisi eget dapibus imperdiet, dui ligula efficitur diam, at suscipit nibh lectus id est. Integer rutrum, nibh sed lacinia tincidunt, turpis nisi rutrum nisi, at gravida nisl tellus a ante. Proin pharetra augue sed nisl fringilla, at efficitur orci rhoncus. Pellentesque id eleifend lectus. Aliquam vel quam faucibus, fringilla sem nec, pulvinar turpis. Proin efficitur felis euismod urna elementum finibus. Phasellus ultrices eros id orci blandit, a molestie sapien pulvinar.",
+      "content_about": "Passionate about new technologies from a young age, I recently graduated with a Bachelor’s degree in Application Development. Always on the lookout for new projects, I enjoy creating sophisticated web applications,small to medium in scale,with dynamic interactions and features.\n \n My skill set is diverse: I'm comfortable with design, analysis, and logic development, although my main interest lies in the back-end. I enjoy building efficient, polished solutions for challenging projects.\n\nBeyond development, I’m curious and enjoy exploring a bit of everything. I love reading, especially on topics like psychology, personal development, science, and history. As a regular runner and swimmer, I stay active with a range of fitness activities. I’m also a film enthusiast, always on the hunt for new movies , and I’m a fan of board games, especially those that combine teamwork with a bit of friendly rivalry! (check out my TVTime profile " ,
       "title_education": "Education",
-      "content_education": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. ",
+      "content_education": "Graduated with a Bachelor's Degree in Software Development in 2024 from the 'Haute École Bruxelles-Brabant - École Supérieure d'Informatique (HE2B ESI)' in Brussels.",
       "firstname": "Gabriel",
       "lastname": "Espinosa"
     },
@@ -305,53 +305,101 @@
       "cat_personal": "Personal Project",
       "icon_personal": {
         "discord": {
-          "url": "https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png"
+          "name": "Discord",
+          "image": "https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png",
+          "about": "Discord is a VoIP and instant messaging platform designed for creating communities, widely used by gamers and developers.",
+          "url": "https://discord.com/"
         },
         "arduino": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-arduino-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226072.png?f=webp&w=256"
+          "name": "Arduino",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-arduino-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226072.png?f=webp&w=256",
+          "about": "Arduino is an open-source electronics platform based on easy-to-use hardware and software, popular for building electronic projects.",
+          "url": "https://www.arduino.cc/"
         },
         "unity": {
-          "url": "https://cdn-icons-png.flaticon.com/256/5969/5969346.png"
+          "name": "Unity",
+          "image": "https://cdn-icons-png.flaticon.com/256/5969/5969346.png",
+          "about": "Unity is a powerful, cross-platform game engine used for developing 2D and 3D games and simulations.",
+          "url": "https://unity.com/"
         },
         "csharp": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-csharp-1175240.png?f=webp"
+          "name": "C#",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-csharp-1175240.png?f=webp",
+          "about": "C# is a modern, object-oriented programming language developed by Microsoft, widely used in web, desktop, and game development.",
+          "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
         },
         "ubuntu": {
-          "url": "https://cdn.iconscout.com/icon/free/png-256/free-ubuntu-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175076.png?f=webp&w=256"
+          "name": "Ubuntu",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-ubuntu-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175076.png?f=webp&w=256",
+          "about": "Ubuntu is a popular open-source Linux operating system, known for its ease of use and large community support.",
+          "url": "https://ubuntu.com/"
+        },
+        "cisco_packet_tracer": {
+          "name": "Cisco Packet Tracer",
+          "image": "https://defkey.com/images/program/cisco-packet-tracer-2023-12-21_10-12-46-icon-resized.png",
+          "about": "Cisco Packet Tracer is a network simulation tool that allows users to create network topologies, experiment with network behavior, and troubleshoot networks.",
+          "url": "https://www.netacad.com/courses/packet-tracer"
+        },
+        "inkscape": {
+          "name": "Inkscape",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Inkscape_Logo.svg",
+          "about": "Inkscape is a free and open-source vector graphics editor, widely used for creating illustrations, icons, and complex graphic designs.",
+          "url": "https://inkscape.org/"
         }
       }
     },
     "portfolio": {
       "title": "Portfolio",
       "projects": {
-        "first": {
+        "stratego": {
           "name": "Stratego",
-          "description": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. Donec vestibulum vulputate dapibus. Phasellus interdum vel tellus eget fermentum. Vestibulum quis mi consequat libero aliquet euismod. Curabitur ornare porta egestas. Nulla euismod, nisi eget dapibus imperdiet, dui ligula efficitur diam, at suscipit nibh lectus id est. Integer rutrum, nibh sed lacinia tincidunt, turpis nisi rutrum nisi, at gravida nisl tellus a ante. Proin pharetra augue sed nisl fringilla, at efficitur orci rhoncus. Pellentesque id eleifend lectus. Aliquam vel quam faucibus, fringilla sem nec, pulvinar turpis. Proin efficitur felis euismod urna elementum finibus. Phasellus ultrices eros id orci blandit, a molestie sapien pulvinar.",
+          "description": "This application is a duo project, inspired by the board game Stratego, designed for turn-based gameplay. Developed in C++ with Qt Creator, it showcases key features of game development in a desktop environment.",
           "tech": {
-            "sql": {
-              "name":"SQL"
+            "C++": {
+              "name":"C++"
             },
-            "ts": {
-              "name":"TypeScript"
+            "QtCreator": {
+              "name":"QtCreator"
             }
           },
           "url": "https://github.com/ElSueno323/Stratego",
-          "picture": "rm.jpg"
+          "picture": "stratego.png"
         },
-        "second": {
+        "luckyNumber": {
           "name": "Lucky Number",
-          "description": "Praesent molestie ipsum luctus, tempor ante a, blandit ex. Proin tincidunt orci erat, eu tempor arcu sodales cursus. Maecenas venenatis pretium nunc ut lobortis. Donec vestibulum vulputate dapibus. Phasellus interdum vel tellus eget fermentum. Vestibulum quis mi consequat libero aliquet euismod. Curabitur ornare porta egestas. Nulla euismod, nisi eget dapibus imperdiet, dui ligula efficitur diam, at suscipit nibh lectus id est. Integer rutrum, nibh sed lacinia tincidunt, turpis nisi rutrum nisi, at gravida nisl tellus a ante. Proin pharetra augue sed nisl fringilla, at efficitur orci rhoncus. Pellentesque id eleifend lectus. Aliquam vel quam faucibus, fringilla sem nec, pulvinar turpis. Proin efficitur felis euismod urna elementum finibus. Phasellus ultrices eros id orci blandit, a molestie sapien pulvinar.",
+          "description": "This is a Java application based on the principles of the Lucky Number game playable exclusively through the command line interface. It is a number placement game that combines chance and strategy. The player receives a board and draws 4 numbered tiles, which they place on the diagonal cells. On their turn, the player either draws a hidden tile or takes a visible tile and places it on their board. The numbers must always be arranged in ascending order from right to left and top to bottom. If a player cannot place a tile, they discard it face-up on the table. The value of the numbers must be carefully considered, and players need to strategically choose their placements.",
           "tech": {
-            "js": {
-              "name":"Javascript"
+            "java": {
+              "name":"Java"
             },
-            "css": {
-              "name": "CSS"
+            "maven": {
+              "name": "Maven"
             }
           },
-          "url": "https://github.com/ElSueno323/Stratego",
-          "picture": "portrait.png"
+          "url": "https://github.com/ElSueno323/LuckyNumber",
+          "picture": "lucky_number.png"
         },
+        "stib": {
+          "name": "Stib Map",
+          "description": "STIB Metro Shortest Path Finder is a Java application that calculates the shortest route for the Brussels metro using the official STIB API. By leveraging Dijkstra's algorithm, this application helps users determine the quickest path between metro stations in the STIB network.",
+          "tech": {
+            "java": {
+              "name": "Java"
+            },
+            "maven": {
+              "name": "Maven"
+            },
+            "sql": {
+              "name": "SQLite"
+            },
+            "javafx": {
+              "name": "JavaFX"
+            }
+          },
+          "url": "https://github.com/ElSueno323/StibMap",
+          "picture": "stib.png"
+        },
+
         "subtitle_tech": "TECH STACK"
       }
     },
@@ -381,6 +429,11 @@
       "hire": "Hire Me",
       "cv": "Get CV",
       "portfolio": "Take a Look"
+    },
+    "extra": {
+      "tv_time": {
+        "url": "https://tvtime.com/r/34Sj1"
+      }
     }
   }
 }

@@ -18,9 +18,9 @@
       <h2>
         {{  $i18n.messages.msg.translation.content.greeting.job }}
       </h2>
-      <h6 class="colored">
+      <h5 class="colored">
         {{  $i18n.messages.msg.translation.content.greeting.country_info  }} {{$i18n.messages.msg.translation.content.greeting.country}}
-      </h6>
+      </h5>
     </div>
 
     <div class="container_button">
@@ -48,16 +48,31 @@
 
 <style scoped>
 
+  h1{
+    font-size: 4vw;
+  }
+  h2{
+    font-size: 3vw;
+  }
+  h5{
+    font-size: 2vw;
+  }
+
   .container{
     display: grid;
     height: 50rem;
     margin-top: 2rem;
+    place-items: center;
   }
   .container_top_left {
     text-align: left;
     grid-column: 1;
     grid-row: 1;
   }
+  .container_top_left >* {
+    margin-bottom: 2vh;
+  }
+
   .container_button {
     grid-column: 1;
     grid-row: 2;
@@ -67,13 +82,11 @@
   .container_top_right {
     grid-column: 2;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
     display: grid;
   }
   .full_height{
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 3vh;
   }
   .portrait {
@@ -82,8 +95,8 @@
   }
   img{
     background: navajowhite !important;
-
-    height: 30rem ;
+    min-width: 1px;
+    max-width: 50vh;
   }
 
   .custom-reverse-button {

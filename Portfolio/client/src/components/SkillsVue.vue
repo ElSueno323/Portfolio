@@ -74,7 +74,7 @@
                 :key="content"
               >
                 <a :href="content.url" :title="content.about">
-                  <img :src="content.url" :alt="content.name">
+                  <img :src="content.image" :alt="content.name">
                 </a>
               </div>
             </div>
