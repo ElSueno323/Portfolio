@@ -4,7 +4,7 @@
 
 <template>
 
-  <div class="container" id="home">
+  <div class="container">
     <div class="container_top_left">
       <h2>
         {{  $i18n.messages.msg.translation.content.greeting.title }}

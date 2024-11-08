@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="container" id="skills">
+  <div class="container">
     <h1>
       <span class="colored">
         {{ $i18n.messages.msg.translation.content.skills.title }}
@@ -90,8 +90,9 @@
 .container {
   text-align: left;
   display: grid;
-  margin: 3vh;
+  margin-right: 3vh;
   align-self: center;
+
 }
 
 .container_languages {

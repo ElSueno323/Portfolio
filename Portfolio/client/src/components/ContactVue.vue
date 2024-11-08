@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid " id="contact"
+  <div class="container-fluid "
   style="padding: 0 ">
     <div style="
     background: var(--nav-active-background);

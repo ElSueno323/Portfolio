@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="portfolio">
+  <div class="container">
     <h1>
       <span class="colored">
         {{ portfolio.title }}
@@ -10,7 +10,7 @@
         <b-nav-item
           v-for="(project) in projects"
           :key="project"
-          @click="selectProject(project)"
+          @click.prevent="selectProject(project)"
         >
           {{project.name}}
         </b-nav-item>
@@ -88,5 +88,9 @@ function selectProject(project) {
 .gradient-button{
     padding: 2vh 3vh 2vh 3vh;
     justify-self: center;
+}
+
+img{
+  max-width: 620px;
 }
 </style>

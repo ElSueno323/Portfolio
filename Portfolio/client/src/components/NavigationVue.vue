@@ -10,7 +10,7 @@
       <b-nav-item
                   v-for="content in $i18n.messages.msg.translation.content.navigation"
                   :key="content"
-                  @click="$emit('navigate',content)">
+                  @click.prevent="$emit('navigate',content)">
         {{content}}
       </b-nav-item>
     </b-nav>

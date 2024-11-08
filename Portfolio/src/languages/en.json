@@ -351,6 +351,44 @@
     "portfolio": {
       "title": "Portfolio",
       "projects": {
+        "livy": {
+          "name": "Liv-Y Back-End",
+          "description" : "This application, for which I handled the back-end development, allows property owners to access information related to their rental properties, including details of current tenants, and manage interactions with them. Owners can also invite new tenants through the platform and communicate effectively with them, as well as with maintenance staff such as cleaners and other workers.",
+          "tech": {
+            "nodejs": {
+              "name":"Node.js"
+            },
+            "postgresql": {
+              "name":"PostgreSQL"
+            },
+            "typescript": { "name":
+              "TypeScript"
+            },
+            "zod": {
+              "name":"Zod"
+            },
+            "typeorm": {
+              "name":"TypeORM"
+            },
+            "pdfkit": {
+              "name":"PDFKit"
+            },
+            "s3": {
+              "name":"AWS Simple Storage Service"
+            },
+            "ec2": {"name":
+              "AWS Elastic Compute Cloud"
+            },
+            "github_action": {
+              "name":"GitHub Actions"
+            },
+            "macos": {
+              "name":"MacOS"
+            }
+          },
+          "url": "",
+          "picture": "livy.png"
+        },
         "stratego": {
           "name": "Stratego",
           "description": "This application is a duo project, inspired by the board game Stratego, designed for turn-based gameplay. Developed in C++ with Qt Creator, it showcases key features of game development in a desktop environment.",
@@ -394,12 +432,46 @@
             },
             "javafx": {
               "name": "JavaFX"
+            },
+            "scenebuilder": {
+              "name": "SceneBuilder"
             }
           },
           "url": "https://github.com/ElSueno323/StibMap",
           "picture": "stib.png"
         },
-
+        "quickfood": {
+          "name": "QuickFood",
+          "description": "The application allows users to search for recipes based on specific tags, receive a random recipe, add it to their favorites, or start a new search. Each recipe displays the required ingredients, which users can check off to indicate whether they have them or not. Additionally, the application provides an estimated preparation time for each recipe.",
+          "tech": {
+            "kotlin": {
+              "name": "Kotlin"
+            },
+            "xml": {
+              "name": "XML"
+            },
+            "jetpack": {
+              "name": "Jetpack Compose"
+            },
+            "coroutine": {
+              "name": "Kotlin Coroutines"
+            },
+            "android": {
+              "name": "Android"
+            },
+            "room": {
+              "name": "Room"
+            },
+            "mvvm": {
+              "name": "MVVM"
+            },
+            "api": {
+              "name": "API"
+            }
+          },
+          "url": "https://github.com/ElSueno323/QuickFood",
+          "picture": "quickfood.png"
+        },
         "subtitle_tech": "TECH STACK"
       }
     },
