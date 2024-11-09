@@ -4,15 +4,15 @@
     <div class="container_top_left">
       <h1>
         <span class="colored">
-          {{$i18n.messages.msg.translation.content.about.firstname}} {{$i18n.messages.msg.translation.content.about.lastname}}
+          {{about.firstname}} {{about.lastname}}
         </span>
       </h1>
       <div class="container_about">
         <h2>
-          {{  $i18n.messages.msg.translation.content.about.title_about }}
+          {{  about.title_about }}
         </h2>
         <h6>
-          {{  $i18n.messages.msg.translation.content.about.content_about }} <a href="https://tvtime.com/r/34Sj1">here</a>)
+          {{  about.content_about }} <a href="https://tvtime.com/r/34Sj1">here</a>)
         </h6>
       </div>
 
@@ -23,13 +23,14 @@
 
     <div class="container_bottom">
       <div class="container_education">
+
         <h2>
-          {{  $i18n.messages.msg.translation.content.about.title_education }}
+          {{  about.title_education }}
         </h2>
         <div class="container_education_content">
           <img src="../assets/HE2B.webp" alt="">
           <h6>
-            {{  $i18n.messages.msg.translation.content.about.content_education }}
+            {{  about.content_education }}
           </h6>
         </div>
       </div>
@@ -40,7 +41,7 @@
           </b-button>
         </div>
         <div>
-          <b-button class="custom-reverse-button">
+          <b-button class="gradient-button">
             {{  $i18n.messages.msg.translation.content.button.cv }}
           </b-button>
         </div>
@@ -50,6 +51,14 @@
 
   </div>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n';
+
+const { messages } = useI18n();
+const about=messages.value.msg.translation.content.about;
+
+</script>
 
 <style scoped>
 .container{

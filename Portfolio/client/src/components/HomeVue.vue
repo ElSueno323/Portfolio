@@ -1,25 +1,29 @@
-<script setup lang="ts">
-
-</script>
 
 <template>
 
   <div class="container">
     <div class="container_top_left">
       <h2>
-        {{  $i18n.messages.msg.translation.content.greeting.title }}
+        {{greeting.title}}
       </h2>
       <h1>
-        {{  $i18n.messages.msg.translation.content.greeting.name }}
-        <span class="colored">
-          {{$i18n.messages.msg.translation.content.greeting.firstname}} {{$i18n.messages.msg.translation.content.greeting.lastname}}
+        {{greeting.name}}
+        <span v-for="(letter, index) in `${greeting.firstname}\u00A0${greeting.lastname}`"
+              :key="index"
+              :style="{ animationDelay: `${index * 0.1}s` }"
+              class="colored">
+            {{letter}}
+
         </span>
       </h1>
       <h2>
-        {{  $i18n.messages.msg.translation.content.greeting.job }}
+        {{  greeting.job }}
       </h2>
-      <h5 class="colored">
-        {{  $i18n.messages.msg.translation.content.greeting.country_info  }} {{$i18n.messages.msg.translation.content.greeting.country}}
+      <h5 v-for="(letter, index) in `${greeting.country_info}\u00A0${greeting.country}`"
+          :key="index"
+          :style="{ animationDelay: `${index * 0.1}s` }"
+        class="colored">
+        {{letter}}
       </h5>
     </div>
 
@@ -30,7 +34,7 @@
         </b-button>
       </div>
       <div>
-        <b-button class="custom-reverse-button">
+        <b-button class="gradient-button">
           {{  $i18n.messages.msg.translation.content.button.cv }}
         </b-button>
       </div>
@@ -38,13 +42,22 @@
 
     <div class="container_top_right">
       <div class="full_height">
-        <img class="portrait" alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}" src="../assets/portrait_normale.jpg">
+        <img class="portrait" alt="{{ greeting.firstname }}" src="../assets/portrait_normale.jpg">
       </div>
     </div>
 
   </div>
 
 </template>
+
+<script setup >
+
+import { useI18n } from 'vue-i18n';
+
+const { messages } = useI18n();
+const greeting=messages.value.msg.translation.content.greeting;
+
+</script>
 
 <style scoped>
 
@@ -99,54 +112,24 @@
     max-width: 50vh;
   }
 
-  .custom-reverse-button {
-    position: relative;
-    font-size: 3vh;
-    font-weight: bold;
-    color: transparent;
-    background: var(--nav-active-background);
-    -webkit-background-clip: text;
-    background-clip: text;
-    border: 1px solid transparent;
-    transition: opacity 0.3s ease;
-    overflow: hidden;
-  }
 
-  .custom-reverse-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--nav-active-background);
-    z-index: -1;
-    border-radius: 5px;
+
+  .colored{
     opacity: 0;
-    transition: opacity 0.3s ease;
+    display: inline-block;
+    animation: fadeIn 4s alternate-reverse running infinite;
+  }
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  .custom-reverse-button:hover::before {
-    opacity: 80%;
-  }
-
-  .gradient-button {
-    font-size: 3vh;
-    background: var(--nav-active-background);
-    font-weight: bold;
-    color: white;
-    opacity: 80%;
-  }
-
-  .gradient-button:hover {
-    color: transparent;
-    background: var(--nav-active-background);
-    -webkit-background-clip: text;
-    background-clip: text;
-    border: 1px solid transparent;
-    transition: opacity 0.3s ease;
-    opacity: 1;
-  }
 
 
 </style>

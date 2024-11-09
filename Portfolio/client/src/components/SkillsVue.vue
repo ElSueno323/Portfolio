@@ -1,6 +1,3 @@
-<script setup lang="ts">
-
-</script>
 
 <template>
   <div class="container">
@@ -86,6 +83,10 @@
   </div>
 </template>
 
+<script setup lang="ts">
+
+</script>
+
 <style scoped>
 .container {
   text-align: left;
@@ -118,6 +119,8 @@
   flex-wrap: wrap;
 }
 
+
+
 .container_tools {
   background: var(--nav-active-background);
   color: white;
@@ -133,6 +136,19 @@ h6{
 img {
   width: 40px;
   margin: 1vh;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+img:hover {
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2.2);
+  position:relative;
+  z-index:100;
 }
 
 </style>

@@ -351,6 +351,29 @@
     "portfolio": {
       "title": "Portfolio",
       "projects": {
+        "stratego": {
+          "name": "Stratego",
+          "description": "This application is a duo project, inspired by the board game Stratego, designed for turn-based gameplay. Developed in C++ with Qt Creator, it showcases key features of game development in a desktop environment.",
+          "tech": {
+            "C++": {
+              "name":"C++"
+            },
+            "QtCreator": {
+              "name":"QtCreator"
+            },
+            "mvc": {
+              "name": "MVC"
+            },
+            "Observer pattern": {
+              "name": "Observer Pattern"
+            },
+            "o2": {
+              "name": "Object Oriented"
+            }
+          },
+          "url": "https://github.com/ElSueno323/Stratego",
+          "picture": "stratego.png"
+        },
         "livy": {
           "name": "Liv-Y Back-End",
           "description" : "This application, for which I handled the back-end development, allows property owners to access information related to their rental properties, including details of current tenants, and manage interactions with them. Owners can also invite new tenants through the platform and communicate effectively with them, as well as with maintenance staff such as cleaners and other workers.",
@@ -389,57 +412,6 @@
           "url": "",
           "picture": "livy.png"
         },
-        "stratego": {
-          "name": "Stratego",
-          "description": "This application is a duo project, inspired by the board game Stratego, designed for turn-based gameplay. Developed in C++ with Qt Creator, it showcases key features of game development in a desktop environment.",
-          "tech": {
-            "C++": {
-              "name":"C++"
-            },
-            "QtCreator": {
-              "name":"QtCreator"
-            }
-          },
-          "url": "https://github.com/ElSueno323/Stratego",
-          "picture": "stratego.png"
-        },
-        "luckyNumber": {
-          "name": "Lucky Number",
-          "description": "This is a Java application based on the principles of the Lucky Number game playable exclusively through the command line interface. It is a number placement game that combines chance and strategy. The player receives a board and draws 4 numbered tiles, which they place on the diagonal cells. On their turn, the player either draws a hidden tile or takes a visible tile and places it on their board. The numbers must always be arranged in ascending order from right to left and top to bottom. If a player cannot place a tile, they discard it face-up on the table. The value of the numbers must be carefully considered, and players need to strategically choose their placements.",
-          "tech": {
-            "java": {
-              "name":"Java"
-            },
-            "maven": {
-              "name": "Maven"
-            }
-          },
-          "url": "https://github.com/ElSueno323/LuckyNumber",
-          "picture": "lucky_number.png"
-        },
-        "stib": {
-          "name": "Stib Map",
-          "description": "STIB Metro Shortest Path Finder is a Java application that calculates the shortest route for the Brussels metro using the official STIB API. By leveraging Dijkstra's algorithm, this application helps users determine the quickest path between metro stations in the STIB network.",
-          "tech": {
-            "java": {
-              "name": "Java"
-            },
-            "maven": {
-              "name": "Maven"
-            },
-            "sql": {
-              "name": "SQLite"
-            },
-            "javafx": {
-              "name": "JavaFX"
-            },
-            "scenebuilder": {
-              "name": "SceneBuilder"
-            }
-          },
-          "url": "https://github.com/ElSueno323/StibMap",
-          "picture": "stib.png"
-        },
         "quickfood": {
           "name": "QuickFood",
           "description": "The application allows users to search for recipes based on specific tags, receive a random recipe, add it to their favorites, or start a new search. Each recipe displays the required ingredients, which users can check off to indicate whether they have them or not. Additionally, the application provides an estimated preparation time for each recipe.",
@@ -467,10 +439,56 @@
             },
             "api": {
               "name": "API"
+            },
+            "o2": {
+              "name": "Object Oriented"
             }
           },
           "url": "https://github.com/ElSueno323/QuickFood",
           "picture": "quickfood.png"
+        },
+        "stib": {
+          "name": "Stib Map",
+          "description": "STIB Metro Shortest Path Finder is a Java application that calculates the shortest route for the Brussels metro using the official STIB API. By leveraging Dijkstra's algorithm, this application helps users determine the quickest path between metro stations in the STIB network.",
+          "tech": {
+            "java": {
+              "name": "Java"
+            },
+            "maven": {
+              "name": "Maven"
+            },
+            "sql": {
+              "name": "SQLite"
+            },
+            "javafx": {
+              "name": "JavaFX"
+            },
+            "scenebuilder": {
+              "name": "SceneBuilder"
+            },
+            "o2": {
+              "name": "Object Oriented"
+            }
+          },
+          "url": "https://github.com/ElSueno323/StibMap",
+          "picture": "stib.png"
+        },
+        "luckyNumber": {
+          "name": "Lucky Number",
+          "description": "This is a Java application based on the principles of the Lucky Number game playable exclusively through the command line interface. It is a number placement game that combines chance and strategy. The player receives a board and draws 4 numbered tiles, which they place on the diagonal cells. On their turn, the player either draws a hidden tile or takes a visible tile and places it on their board. The numbers must always be arranged in ascending order from right to left and top to bottom. If a player cannot place a tile, they discard it face-up on the table. The value of the numbers must be carefully considered, and players need to strategically choose their placements.",
+          "tech": {
+            "java": {
+              "name":"Java"
+            },
+            "maven": {
+              "name": "Maven"
+            },
+            "o2": {
+              "name": "Object Oriented"
+            }
+          },
+          "url": "https://github.com/ElSueno323/LuckyNumber",
+          "picture": "lucky_number.png"
         },
         "subtitle_tech": "TECH STACK"
       }
