@@ -135,10 +135,18 @@ h6{
 
 img {
   width: 40px;
+  height: auto;
   margin: 1vh;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  img {
+    width: 30px;
+  }
 }
 
 img:hover {

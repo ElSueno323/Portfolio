@@ -6,14 +6,13 @@
       <h2>
         {{greeting.title}}
       </h2>
-      <h1>
-        {{greeting.name}}
+      <h1 class="greeting">
+        <span>{{greeting.name}}</span>
         <span v-for="(letter, index) in `${greeting.firstname}\u00A0${greeting.lastname}`"
               :key="index"
               :style="{ animationDelay: `${index * 0.1}s` }"
               class="colored">
             {{letter}}
-
         </span>
       </h1>
       <h2>
@@ -29,7 +28,7 @@
 
     <div class="container_button">
       <div>
-        <b-button class="gradient-button">
+        <b-button class="gradient-button" :href="$i18n.messages.msg.translation.content.contact.network.email.link">
           {{  $i18n.messages.msg.translation.content.button.hire }}
         </b-button>
       </div>
@@ -73,7 +72,6 @@ const greeting=messages.value.msg.translation.content.greeting;
 
   .container{
     display: grid;
-    height: 50rem;
     margin-top: 2rem;
     place-items: center;
   }
@@ -85,10 +83,21 @@ const greeting=messages.value.msg.translation.content.greeting;
   .container_top_left >* {
     margin-bottom: 2vh;
   }
+  .greeting span{
+    display: inline;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .greeting  {
+      display: block;
+    }
+  }
 
   .container_button {
-    grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row: 2;
+    gap: 5rem;
     display: flex;
   }
 
@@ -104,6 +113,7 @@ const greeting=messages.value.msg.translation.content.greeting;
   }
   .portrait {
     border: #017d8f 5px solid;
+    border-radius: 10px;
     color: navajowhite !important;
   }
   img{
@@ -111,8 +121,6 @@ const greeting=messages.value.msg.translation.content.greeting;
     min-width: 1px;
     max-width: 50vh;
   }
-
-
 
   .colored{
     opacity: 0;
@@ -130,6 +138,50 @@ const greeting=messages.value.msg.translation.content.greeting;
     }
   }
 
+  @media (min-width: 300px) {
+    img {
+      width: 9rem;
+    }
+    h1{
+      font-size: 1.3rem;
+    }
+    h2{
+      font-size: 0.8rem;
+    }
+    h5{
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (min-width: 400px) {
+    img {
+      width: 10rem;
+    }
+  }
+  @media (min-width: 530px) {
+    img {
+      width: 14rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: 20rem;
+    }
+
+  }
+
+  @media (min-width: 992px) {
+    img {
+      width: 30rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    img {
+      width: 100rem;
+    }
+  }
 
 
 </style>

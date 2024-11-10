@@ -1,15 +1,30 @@
 {
   "content": {
     "navigation": [
-      "Accueil",
-      "À Propos",
-      "Compétences",
-      "Portfolio",
-      "Contact"
+      {
+        "name": "home",
+        "title": "Accueil"
+      },
+      {
+        "name": "about",
+        "title": "À Propos"
+      },
+      {
+        "name": "skills",
+        "title": "Compétences"
+      },
+      {
+        "name": "portfolio",
+        "title": "Portfolio"
+      },
+      {
+        "name": "contact",
+        "title": "Contact"
+      }
     ],
     "greeting": {
       "title": "Bonjour,",
-      "name": "Je suis",
+      "name": "Je suis ",
       "firstname": "Gabriel",
       "lastname": "Espinosa",
       "job": "Web/Software Developer",

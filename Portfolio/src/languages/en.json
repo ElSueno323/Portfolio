@@ -1,15 +1,30 @@
 {
   "content": {
     "navigation": [
-      "Home",
-      "About",
-      "Skills",
-      "Portfolio",
-      "Contact"
+      {
+          "name": "home",
+          "title": "Home"
+      },
+      {
+          "name": "about",
+          "title": "About"
+      },
+      {
+          "name": "skills",
+          "title": "Skills"
+      },
+      {
+          "name": "portfolio",
+          "title": "Portfolio"
+      },
+      {
+          "name": "contact",
+          "title": "Contact"
+      }
     ],
     "greeting": {
       "title": "Hello,",
-      "name": "I'm",
+      "name": "I'm ",
       "firstname": "Gabriel",
       "lastname": "Espinosa",
       "job": "Web/Software Developer",
@@ -54,19 +69,19 @@
       "icon_professional": {
         "typescript": {
           "name": "TypeScript",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+          "image": "https://welovedevs.com/_next/image?url=https%3A%2F%2Fprocess.filestackapi.com%2Foutput%3Dquality%3A80%2Fno_metadata%2Fauto_image%2Fcompress%2FVIF9M8ebQjukQ4oqAkdP&w=3840&q=75",
           "about": "TypeScript is an open-source programming language developed by Microsoft. It is a superset of JavaScript that adds static typing and advanced features to support large application development.",
           "url": "https://www.typescriptlang.org/"
         },
         "html": {
           "name": "HTML",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+          "image": "https://cursus.edu/storage/thumbnails/13974_HTML5_Logo_256.png",
           "about": "HTML (HyperText Markup Language) is the standard language used to structure and display content on web pages across the internet.",
           "url": "https://html.spec.whatwg.org/"
         },
         "css": {
           "name": "CSS",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-css3-8-1175200.png?f=webp",
           "about": "CSS (Cascading Style Sheets) is a styling language used to describe the appearance and formatting of HTML documents, including colors, fonts, layout, and more.",
           "url": "https://www.w3.org/Style/CSS/Overview.en.html"
         },
@@ -78,25 +93,25 @@
         },
         "nodejs": {
           "name": "Node.js",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Font_Awesome_5_brands_node-js.svg",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--nodejs-programming-language-pack-logos-icons-1174925.png?f=webp&w=256",
           "about": "Node.js is a JavaScript runtime environment that allows for server-side application development using an event-driven, non-blocking model for scalability.",
           "url": "https://nodejs.org/"
         },
         "express": {
           "name": "Express",
-          "image": "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
+          "image": "https://celestialsys.com/wp-content/uploads/2024/02/express-sq-256x256-1.webp",
           "about": "Express is a minimalist web framework for Node.js, providing a lightweight and flexible structure to build web applications and APIs.",
           "url": "https://expressjs.com/"
         },
         "git": {
           "name": "Git",
-          "image": "https://blog.lecacheur.com/wp-content/uploads/2014/10/git_logo.png",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-git-225996.png?f=webp",
           "about": "Git is a distributed version control system used to track code changes and facilitate collaboration among developers.",
           "url": "https://git-scm.com/"
         },
         "github": {
           "name": "GitHub",
-          "image": "https://les-tilleuls.coop/wp-content/uploads/2023/02/25231.png",
+          "image": "https://cyclr.com/wp-content/uploads/2022/03/ext-495.png",
           "about": "GitHub is a platform that hosts source code, providing project management, version control, and collaboration features for developers.",
           "url": "https://github.com/"
         },
@@ -108,19 +123,19 @@
         },
         "datagrip": {
           "name": "DataGrip",
-          "image": "https://cdn.icon-icons.com/icons2/3053/PNG/512/intellij_datagrip_macos_bigsur_icon_190058.png",
+          "image": "https://www.softwareadvice.com/_next/image/?url=https%3A%2F%2Fgdm-catalog-fmapi-prod.imgix.net%2FProductLogo%2F9d588608-4095-4c12-b97c-a367088b4f2f.png&w=256&q=75",
           "about": "DataGrip is an IDE developed by JetBrains for databases, offering advanced features for managing, querying, and maintaining databases.",
           "url": "https://www.jetbrains.com/datagrip/"
         },
         "webstorm": {
           "name": "WebStorm",
-          "image": "https://static-00.iconduck.com/assets.00/webstorm-icon-512x512-lmof1hfg.png",
+          "image": "https://www.softwareadvice.com/_next/image/?url=https%3A%2F%2Fgdm-catalog-fmapi-prod.imgix.net%2FProductLogo%2F1c59fd7e-8c1f-4225-a3b2-e591308e9410.png&w=256&q=75",
           "about": "WebStorm is a JetBrains IDE specialized for web development, with strong support for JavaScript, TypeScript, and frameworks like React, Angular, and Vue.js.",
           "url": "https://www.jetbrains.com/webstorm/"
         },
         "space": {
           "name": "Space",
-          "image": "https://resources.jetbrains.com/storage/products/space/img/meta/logo.png",
+          "image": "https://www.ohjelmistot.com/wp-content/uploads/2024/04/Space_icon.png.webp",
           "about": "JetBrains Space is an all-in-one platform for project management and team collaboration, featuring code hosting, CI/CD tools, and team communication.",
           "url": "https://www.jetbrains.com/space/"
         },
@@ -138,7 +153,7 @@
         },
         "aws_ec2": {
           "name": "Amazon EC2",
-          "image": "https://static-00.iconduck.com/assets.00/aws-ec2-icon-1696x2048-nhw31ife.png",
+          "image": "https://s28309.pcdn.co/wp-content/themes/321-web-marketing/assets/images/ec2-logo-256.png",
           "about": "Amazon EC2 (Elastic Compute Cloud) is an AWS service providing scalable virtual servers to run cloud-based applications.",
           "url": "https://aws.amazon.com/ec2/"
         },
@@ -150,7 +165,7 @@
         },
         "github_action": {
           "name": "GitHub Actions",
-          "image": "https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png",
+          "image": "https://miro.medium.com/v2/resize:fit:256/1*KqLT9WloIOUrkYkbtPAPGA.png",
           "about": "GitHub Actions is GitHub’s automation service that enables custom workflows for CI/CD, continuous integration, and other automated processes.",
           "url": "https://github.com/features/actions"
         }
@@ -171,7 +186,7 @@
         },
         "visual_studio_code": {
           "name": "Visual Studio Code",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png",
+          "image": "https://code.visualstudio.com/assets/apple-touch-icon.png",
           "about": "Visual Studio Code is a free, open-source code editor developed by Microsoft, known for its extensions, debugging, and integrated terminal support.",
           "url": "https://code.visualstudio.com/"
         },
@@ -183,7 +198,7 @@
         },
         "mariadb": {
           "name": "MariaDB",
-          "image": "https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent.png",
+          "image": "https://i0.wp.com/sysad.mn/wp-content/uploads/2019/08/mariadb.png?fit=256%2C256&ssl=1",
           "about": "MariaDB is an open-source relational database management system that is compatible with MySQL and provides powerful database features.",
           "url": "https://mariadb.org/"
         },
@@ -201,7 +216,7 @@
         },
         "jquery": {
           "name": "jQuery",
-          "image": "https://seeklogo.com/images/J/jquery-logo-CFE6ECE363-seeklogo.com.png",
+          "image": "https://images.squarespace-cdn.com/content/v1/5d092c5193b409000129adc4/1561156687619-4HL4TCIN7ZFNF2DZCSOZ/jquery+logo.png",
           "about": "jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation, event handling, and animation.",
           "url": "https://jquery.com/"
         },
@@ -213,37 +228,37 @@
         },
         "gitlab": {
           "name": "GitLab",
-          "image": "https://cdn.iconscout.com/icon/free/png-256/free-gitlab-282507.png?f=webp",
+          "image": "https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/Gitlab-iIqM-I0za.png",
           "about": "GitLab is a DevOps platform that provides version control, CI/CD, and collaborative development tools, all in one platform.",
           "url": "https://about.gitlab.com/"
         },
         "virtualbox": {
           "name": "VirtualBox",
-          "image": "https://cdn.icon-icons.com/icons2/195/PNG/256/VirtualBox_23525.png",
+          "image": "https://dl2.macupdate.com/images/icons256/24801.png?time=1666721290",
           "about": "VirtualBox is an open-source virtualization software that allows users to run multiple operating systems on a single machine.",
           "url": "https://www.virtualbox.org/"
         },
         "intellij": {
           "name": "IntelliJ IDEA",
-          "image": "https://static-00.iconduck.com/assets.00/intellij-idea-icon-256x256-588q8493.png",
+          "image": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/ced775da-ddef-41b7-bbc3-e870172021aa.png?w=128&h=128&fit=max&dpr=3&auto=format&q=50",
           "about": "IntelliJ IDEA is a Java-centric integrated development environment (IDE) by JetBrains, known for its smart code assistance and productivity tools.",
           "url": "https://www.jetbrains.com/idea/"
         },
         "c++": {
           "name": "C++",
-          "image": "https://cdn-icons-png.flaticon.com/256/6132/6132222.png",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-cplusplus-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-2-pack-logos-icons-3029933.png",
           "about": "C++ is a powerful general-purpose programming language, an extension of C, widely used in system software, game development, and real-time applications.",
           "url": "https://isocpp.org/"
         },
         "c": {
           "name": "C",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-c-59-1175248.png?f=webp",
           "about": "C is a foundational programming language known for its efficiency and flexibility in system programming and low-level applications.",
           "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
         },
         "clion": {
           "name": "CLion",
-          "image": "https://static-00.iconduck.com/assets.00/clion-icon-256x256-zaezakn1.png",
+          "image": "https://dl.flathub.org/media/com/jetbrains/CLion/a204371b5257c1d04ac891efaa88cfe6/icons/128x128@2/com.jetbrains.CLion.png",
           "about": "CLion is a cross-platform IDE for C and C++ development, featuring smart code completion, refactoring, and debugging tools.",
           "url": "https://www.jetbrains.com/clion/"
         },
@@ -297,7 +312,7 @@
         },
         "windows": {
           "name": "Windows",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1024px-Windows_logo_-_2012.svg.png",
+          "image": "https://culture-informatique.net/wp-content/uploads/2021/07/windows.png",
           "about": "Windows is a family of operating systems developed by Microsoft, widely used for personal computers, tablets, and servers.",
           "url": "https://www.microsoft.com/windows"
         }

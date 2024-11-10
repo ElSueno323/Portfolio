@@ -17,9 +17,6 @@
       </div>
 
     </div>
-    <div class="container_top_right">
-      <img class="portrait" alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}" src="../assets/portrait.jpg">
-    </div>
 
     <div class="container_bottom">
       <div class="container_education">
@@ -72,6 +69,7 @@ const about=messages.value.msg.translation.content.about;
 }
 .container_education_content{
   display: flex;
+  gap: 1rem;
 }
 .container_education_content img{
   width: 17vh;
@@ -108,11 +106,13 @@ const about=messages.value.msg.translation.content.about;
   border: #017d8f 5px solid;
   color: navajowhite !important;
 }
-img{
-  min-height: auto;
-  min-width: auto;
-  max-height: 15em;
-  max-width: 25em;
-  background: navajowhite !important;
+
+@media (max-width: 576px) {
+  .container {
+    margin-left: 0rem;
+  }
+  img{
+    height: 3em;
+  }
 }
 </style>

@@ -4,14 +4,13 @@
 
 <template>
   <div id="nav_body">
-    <div></div>
-    <b-nav tabs>
-      <span></span>
+    <b-nav tabs class="d-flex justify-content-center">
+<!--      <span class="ms-sm-5"></span>-->
       <b-nav-item
                   v-for="content in $i18n.messages.msg.translation.content.navigation"
                   :key="content"
-                  @click.prevent="$emit('navigate',content)">
-        {{content}}
+                  @click.prevent="$emit('navigate',content.name)">
+        <span class="responsive-title">{{ content.title }}</span>
       </b-nav-item>
     </b-nav>
     <div id="header-line" class="custom-background"></div>
@@ -32,13 +31,44 @@
   margin-top: -1px;
   padding-top: 3vh;
 }
-
-span{
-  padding-left: 5rem;
-}
-
 .nav-item{
   font-weight: bold;
+}
+
+
+#nav_body {
+  font-size: 1rem;
+}
+
+@media (min-width: 300px) {
+  #nav_body {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 576px) {
+  #nav_body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #nav_body {
+    font-size: 1.1rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #nav_body {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #nav_body {
+    font-size: 1.3rem;
+  }
 }
 
 </style>

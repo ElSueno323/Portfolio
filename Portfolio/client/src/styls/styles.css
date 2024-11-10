@@ -81,7 +81,7 @@ body {
 
 .container{
     display: grid;
-    height: 100%;
+
     margin-top: 2rem;
     padding: 1em;
     background: white;
@@ -91,11 +91,29 @@ body {
 
 
 .gradient-button {
-    font-size: 3vh;
+    font-size: 2rem;
     background: var(--nav-active-background);
     font-weight: bold;
     color: white;
     opacity: 80%;
+}
+
+
+@media (max-width: 550px) {
+    .gradient-button {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 450px) {
+    .gradient-button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .gradient-button {
+        font-size: 1rem;
+    }
 }
 
 .gradient-button:hover {
@@ -140,4 +158,6 @@ body {
     opacity: 80%;
 }
 
-
+h1{
+    font-size: 1.5rem;
+}

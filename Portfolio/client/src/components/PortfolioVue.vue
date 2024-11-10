@@ -106,4 +106,10 @@ img:hover {
   position:relative;
   z-index:100;
 }
+
+@media (max-width: 576px) {
+  .container {
+    margin-left: 0rem;
+  }
+}
 </style>
