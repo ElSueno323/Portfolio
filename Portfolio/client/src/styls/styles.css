@@ -1,12 +1,10 @@
-/* src/assets/global.css */
 
-/* Couleurs de base pour forcer le mode clair */
+/* Forcing the light mode */
 body {
     background-color: #ffffff !important;
     color: #000000 !important;
 }
 
-/* Empêche le mode sombre même si l'utilisateur a des préférences de système */
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #ffffff !important;

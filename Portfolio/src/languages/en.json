@@ -449,7 +449,7 @@
         },
         "stib": {
           "name": "Stib Map",
-          "description": "STIB Metro Shortest Path Finder is a Java application that calculates the shortest route for the Brussels metro using the official STIB API. By leveraging Dijkstra's algorithm, this application helps users determine the quickest path between metro stations in the STIB network.",
+          "description": "STIB Metro is a Java application that calculates the shortest route for the Brussels metro using the official STIB API. By leveraging Dijkstra's algorithm, this application helps users determine the quickest path between metro stations in the STIB network.",
           "tech": {
             "java": {
               "name": "Java"
@@ -475,7 +475,7 @@
         },
         "luckyNumber": {
           "name": "Lucky Number",
-          "description": "This is a Java application based on the principles of the Lucky Number game playable exclusively through the command line interface. It is a number placement game that combines chance and strategy. The player receives a board and draws 4 numbered tiles, which they place on the diagonal cells. On their turn, the player either draws a hidden tile or takes a visible tile and places it on their board. The numbers must always be arranged in ascending order from right to left and top to bottom. If a player cannot place a tile, they discard it face-up on the table. The value of the numbers must be carefully considered, and players need to strategically choose their placements.",
+          "description": "This Java application is based on the Lucky Number game and is played exclusively through the command-line interface. It follows a Model-View-Controller (MVC) architecture to separate the different layers of the application.",
           "tech": {
             "java": {
               "name":"Java"

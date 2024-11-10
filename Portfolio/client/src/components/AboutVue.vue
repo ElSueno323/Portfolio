@@ -34,18 +34,6 @@
           </h6>
         </div>
       </div>
-      <div class="container_button">
-        <div>
-          <b-button class="gradient-button">
-            {{  $i18n.messages.msg.translation.content.button.hire }}
-          </b-button>
-        </div>
-        <div>
-          <b-button class="gradient-button">
-            {{  $i18n.messages.msg.translation.content.button.cv }}
-          </b-button>
-        </div>
-      </div>
     </div>
 
 
