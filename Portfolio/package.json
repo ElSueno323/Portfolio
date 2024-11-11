@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && cd client && npm install && npm run build && cd ..",
-    rimraf ./dist && tsc
     "dev": "copy .env.local .env && nodemon",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
