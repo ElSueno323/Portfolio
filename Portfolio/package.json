@@ -4,13 +4,15 @@
   "description": "This is the source code for my personal portfolio, designed to showcase my skills, projects, and professional experience as a web developer and application developer. It is an interactive and responsive platform that highlights my work and allows me to easily share it with potential clients or employers",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf ./dist && tsc",
+    "build": "tsc && cd client && npm install && npm run build && cd ..",
+    rimraf ./dist && tsc
     "dev": "copy .env.local .env && nodemon",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "Gabriel Espinosa",

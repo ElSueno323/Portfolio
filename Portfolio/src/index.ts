@@ -21,10 +21,7 @@ i18next
       },
   });
 
-// Ajout du middleware pour intégrer i18next à Express
 app.use(middleware.handle(i18next));
-
-
 
 const PORT = process.env.PORT || 3000;
 
