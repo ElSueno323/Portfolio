@@ -538,6 +538,10 @@
     "extra": {
       "tv_time": {
         "url": "https://tvtime.com/r/34Sj1"
+      },
+      "cv": {
+        "name": "Gabriel_Espinosa_CV.pdf",
+        "path":"/CV_EN.pdf"
       }
     }
   }

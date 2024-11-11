@@ -33,7 +33,9 @@
         </b-button>
       </div>
       <div>
-        <b-button class="gradient-button">
+        <b-button class="gradient-button"
+                  :href="cv.path"
+                  :download="cv.name">
           {{  $i18n.messages.msg.translation.content.button.cv }}
         </b-button>
       </div>
@@ -55,16 +57,17 @@ import { useI18n } from 'vue-i18n';
 
 const { messages } = useI18n();
 const greeting=messages.value.msg.translation.content.greeting;
+const cv =messages.value.msg.translation.content.extra.cv;
 
 </script>
 
 <style scoped>
 
   h1{
-    font-size: 4vw;
+    font-size: 3vw;
   }
   h2{
-    font-size: 3vw;
+    font-size: 2vw;
   }
   h5{
     font-size: 2vw;
@@ -138,10 +141,7 @@ const greeting=messages.value.msg.translation.content.greeting;
     }
   }
 
-  @media (min-width: 300px) {
-    img {
-      width: 9rem;
-    }
+  @media (max-width: 600px) {
     h1{
       font-size: 1.3rem;
     }
@@ -153,10 +153,17 @@ const greeting=messages.value.msg.translation.content.greeting;
     }
   }
 
+  @media (min-width: 300px) {
+    img {
+      width: 7rem;
+    }
+  }
+
   @media (min-width: 400px) {
     img {
       width: 10rem;
     }
+
   }
   @media (min-width: 530px) {
     img {
