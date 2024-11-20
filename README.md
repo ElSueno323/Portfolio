@@ -70,12 +70,13 @@ Ensure you have installed:
 
 4. **Run backend** :
    ```bash
+   cd server
    nodemon
    ```
 
 5. **Run frontend** :
    ```bash
-   cd ../client
+   cd client
    npm run serve
    ```
 
