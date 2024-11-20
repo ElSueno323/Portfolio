@@ -1,4 +1,5 @@
-# client
+# Client
+Front-end for the Portfolio.
 
 ## Project setup
 ```
