@@ -98,23 +98,22 @@ body {
     opacity: 80%;
 }
 
-
-@media (max-width: 550px) {
+@media (min-width: 300px) {
+    .gradient-button {
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 550px) {
     .gradient-button {
         font-size: 1.5rem;
     }
 }
-@media (max-width: 450px) {
+@media (min-width: 450px) {
     .gradient-button {
         font-size: 1.2rem;
     }
 }
 
-@media (max-width: 350px) {
-    .gradient-button {
-        font-size: 1rem;
-    }
-}
 
 .gradient-button:hover {
     color: transparent;

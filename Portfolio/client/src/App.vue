@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <NavigationVue @navigate="navigateTo"/>
-    <HomeVue id="home"/>
+    <HomeVue id="home" />
     <AboutVue  id="about"/>
     <SkillsVue id="skills"/>
     <PortfolioVue id="portfolio"/>
@@ -16,6 +16,8 @@ import AboutVue from '@/components/AboutVue.vue';
 import SkillsVue from '@/components/SkillsVue.vue';
 import PortfolioVue from '@/components/PortfolioVue.vue';
 import ContactVue from '@/components/ContactVue.vue';
+import loadLocaleMessages from '@/i18n';
+
 
 export default {
   name: 'App',
@@ -27,12 +29,19 @@ export default {
     NavigationVue,
     HomeVue,
   },
+  setup() {
+    const loadD= async ()=>{
+      await loadLocaleMessages();
+    }
+    return{
+      loadD,
+    };
+  },
   methods: {
     navigateTo (route) {
       document.getElementById(route.toLowerCase()).scrollIntoView({behavior:"smooth"})
     }
-  },
-
+  }
 }
 
 </script>

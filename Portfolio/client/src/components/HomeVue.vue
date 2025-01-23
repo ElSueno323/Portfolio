@@ -100,7 +100,7 @@ const cv =messages.value.msg.translation.content.extra.cv;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 2;
-    gap: 5rem;
+    gap: 3rem;
     display: flex;
   }
 

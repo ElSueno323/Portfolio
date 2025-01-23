@@ -23,6 +23,9 @@
 
         </b-button>
       </div>
+      <div>
+        {{ copyright }}
+      </div>
 
     </div>
   </div>
@@ -34,6 +37,7 @@ import { useI18n } from 'vue-i18n';
 
 const { messages } = useI18n();
 const contact = messages.value.msg.translation.content.contact;
+const copyright = messages.value.msg.translation.content.extra.copyright;
 </script>
 <style>
 

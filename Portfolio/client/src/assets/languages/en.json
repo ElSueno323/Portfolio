@@ -1,0 +1,549 @@
+{
+  "content": {
+    "navigation": [
+      {
+          "name": "home",
+          "title": "Home"
+      },
+      {
+          "name": "about",
+          "title": "About"
+      },
+      {
+          "name": "skills",
+          "title": "Skills"
+      },
+      {
+          "name": "portfolio",
+          "title": "Portfolio"
+      },
+      {
+          "name": "contact",
+          "title": "Contact"
+      }
+    ],
+    "greeting": {
+      "title": "Hello,",
+      "name": "I'm ",
+      "firstname": "Gabriel",
+      "lastname": "Espinosa",
+      "job": "Web/Software Developer",
+      "country_info": "From",
+      "country": "Belgium"
+    },
+    "about": {
+      "title_about": "About me",
+      "content_about": "Passionate about new technologies from a young age, I recently graduated with a Bachelor’s degree in Application Development. Always on the lookout for new projects, I enjoy creating sophisticated web applications,small to medium in scale,with dynamic interactions and features.\n \n My skill set is diverse: I'm comfortable with design, analysis, and logic development, although my main interest lies in the back-end. I enjoy building efficient, polished solutions for challenging projects.\n\nBeyond development, I’m curious and enjoy exploring a bit of everything. I love reading, especially on topics like psychology, personal development, science, and history. As a regular runner and swimmer, I stay active with a range of fitness activities. I’m also a film enthusiast, always on the hunt for new movies , and I’m a fan of board games, especially those that combine teamwork with a bit of friendly rivalry! (check out my TVTime profile " ,
+      "title_education": "Education",
+      "content_education": "Graduated with a Bachelor's Degree in Software Development in 2024 from the 'Haute École Bruxelles-Brabant - École Supérieure d'Informatique (HE2B ESI)' in Brussels.",
+      "firstname": "Gabriel",
+      "lastname": "Espinosa"
+    },
+    "skills": {
+      "title": "Skills",
+      "title_languages": "Spoken Languages",
+      "spoken_languages": {
+        "french": {
+          "name": "French",
+          "level": "Native",
+          "icon": "fr"
+        },
+        "spanish": {
+          "name": "Spanish",
+          "level": "Fluent",
+          "icon": "es"
+        },
+        "portuguese": {
+          "name": "Portuguese",
+          "level": "Fluent",
+          "icon": "pt"
+        },
+        "english": {
+          "name": "English",
+          "level": "Conversational",
+          "icon": "gb"
+        }
+      },
+      "title_tools": "Tools Box",
+      "cat_professional": "Professional",
+      "icon_professional": {
+        "typescript": {
+          "name": "TypeScript",
+          "image": "https://welovedevs.com/_next/image?url=https%3A%2F%2Fprocess.filestackapi.com%2Foutput%3Dquality%3A80%2Fno_metadata%2Fauto_image%2Fcompress%2FVIF9M8ebQjukQ4oqAkdP&w=3840&q=75",
+          "about": "TypeScript is an open-source programming language developed by Microsoft. It is a superset of JavaScript that adds static typing and advanced features to support large application development.",
+          "url": "https://www.typescriptlang.org/"
+        },
+        "html": {
+          "name": "HTML",
+          "image": "https://cursus.edu/storage/thumbnails/13974_HTML5_Logo_256.png",
+          "about": "HTML (HyperText Markup Language) is the standard language used to structure and display content on web pages across the internet.",
+          "url": "https://html.spec.whatwg.org/"
+        },
+        "css": {
+          "name": "CSS",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-css3-8-1175200.png?f=webp",
+          "about": "CSS (Cascading Style Sheets) is a styling language used to describe the appearance and formatting of HTML documents, including colors, fonts, layout, and more.",
+          "url": "https://www.w3.org/Style/CSS/Overview.en.html"
+        },
+        "javascript": {
+          "name": "JavaScript",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png",
+          "about": "JavaScript is a programming language widely used to create interactive web pages, allowing for DOM manipulation, animations, and asynchronous requests.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        "nodejs": {
+          "name": "Node.js",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--nodejs-programming-language-pack-logos-icons-1174925.png?f=webp&w=256",
+          "about": "Node.js is a JavaScript runtime environment that allows for server-side application development using an event-driven, non-blocking model for scalability.",
+          "url": "https://nodejs.org/"
+        },
+        "express": {
+          "name": "Express",
+          "image": "https://celestialsys.com/wp-content/uploads/2024/02/express-sq-256x256-1.webp",
+          "about": "Express is a minimalist web framework for Node.js, providing a lightweight and flexible structure to build web applications and APIs.",
+          "url": "https://expressjs.com/"
+        },
+        "git": {
+          "name": "Git",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-git-225996.png?f=webp",
+          "about": "Git is a distributed version control system used to track code changes and facilitate collaboration among developers.",
+          "url": "https://git-scm.com/"
+        },
+        "github": {
+          "name": "GitHub",
+          "image": "https://cyclr.com/wp-content/uploads/2022/03/ext-495.png",
+          "about": "GitHub is a platform that hosts source code, providing project management, version control, and collaboration features for developers.",
+          "url": "https://github.com/"
+        },
+        "postman": {
+          "name": "Postman",
+          "image": "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8",
+          "about": "Postman is a collaborative tool for API development, enabling users to create, test, and document APIs efficiently.",
+          "url": "https://www.postman.com/"
+        },
+        "datagrip": {
+          "name": "DataGrip",
+          "image": "https://www.softwareadvice.com/_next/image/?url=https%3A%2F%2Fgdm-catalog-fmapi-prod.imgix.net%2FProductLogo%2F9d588608-4095-4c12-b97c-a367088b4f2f.png&w=256&q=75",
+          "about": "DataGrip is an IDE developed by JetBrains for databases, offering advanced features for managing, querying, and maintaining databases.",
+          "url": "https://www.jetbrains.com/datagrip/"
+        },
+        "webstorm": {
+          "name": "WebStorm",
+          "image": "https://www.softwareadvice.com/_next/image/?url=https%3A%2F%2Fgdm-catalog-fmapi-prod.imgix.net%2FProductLogo%2F1c59fd7e-8c1f-4225-a3b2-e591308e9410.png&w=256&q=75",
+          "about": "WebStorm is a JetBrains IDE specialized for web development, with strong support for JavaScript, TypeScript, and frameworks like React, Angular, and Vue.js.",
+          "url": "https://www.jetbrains.com/webstorm/"
+        },
+        "space": {
+          "name": "Space",
+          "image": "https://www.ohjelmistot.com/wp-content/uploads/2024/04/Space_icon.png.webp",
+          "about": "JetBrains Space is an all-in-one platform for project management and team collaboration, featuring code hosting, CI/CD tools, and team communication.",
+          "url": "https://www.jetbrains.com/space/"
+        },
+        "postgresql": {
+          "name": "PostgreSQL",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png",
+          "about": "PostgreSQL is an open-source relational database management system known for its reliability, extensibility, and adherence to SQL standards.",
+          "url": "https://www.postgresql.org/"
+        },
+        "aws_s3": {
+          "name": "Amazon S3",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/1712px-Amazon-S3-Logo.svg.png",
+          "about": "Amazon S3 (Simple Storage Service) is an AWS object storage service that enables scalable data storage and retrieval.",
+          "url": "https://aws.amazon.com/s3/"
+        },
+        "aws_ec2": {
+          "name": "Amazon EC2",
+          "image": "https://s28309.pcdn.co/wp-content/themes/321-web-marketing/assets/images/ec2-logo-256.png",
+          "about": "Amazon EC2 (Elastic Compute Cloud) is an AWS service providing scalable virtual servers to run cloud-based applications.",
+          "url": "https://aws.amazon.com/ec2/"
+        },
+        "ZOD": {
+          "name": "Zod",
+          "image": "https://seeklogo.com/images/Z/zod-logo-B57E684330-seeklogo.com.png",
+          "about": "Zod is a TypeScript schema declaration and validation library that provides strict typing and advanced data validation tools.",
+          "url": "https://zod.dev/"
+        },
+        "github_action": {
+          "name": "GitHub Actions",
+          "image": "https://miro.medium.com/v2/resize:fit:256/1*KqLT9WloIOUrkYkbtPAPGA.png",
+          "about": "GitHub Actions is GitHub’s automation service that enables custom workflows for CI/CD, continuous integration, and other automated processes.",
+          "url": "https://github.com/features/actions"
+        }
+      },
+      "cat_school": "School Project",
+      "icon_school": {
+        "sql": {
+          "name": "SQL",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg",
+          "about": "SQL (Structured Query Language) is a standardized language for managing and manipulating relational databases, used for querying and updating data.",
+          "url": "https://www.iso.org/standard/63555.html"
+        },
+        "chatgpt": {
+          "name": "ChatGPT",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/800px-ChatGPT-Logo.svg.png",
+          "about": "ChatGPT is an AI language model developed by OpenAI, capable of generating human-like text based on input prompts.",
+          "url": "https://openai.com/chatgpt"
+        },
+        "visual_studio_code": {
+          "name": "Visual Studio Code",
+          "image": "https://code.visualstudio.com/assets/apple-touch-icon.png",
+          "about": "Visual Studio Code is a free, open-source code editor developed by Microsoft, known for its extensions, debugging, and integrated terminal support.",
+          "url": "https://code.visualstudio.com/"
+        },
+        "docker": {
+          "name": "Docker",
+          "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/docker-icon.png",
+          "about": "Docker is an open platform for developing, shipping, and running applications inside lightweight, portable containers.",
+          "url": "https://www.docker.com/"
+        },
+        "mariadb": {
+          "name": "MariaDB",
+          "image": "https://i0.wp.com/sysad.mn/wp-content/uploads/2019/08/mariadb.png?fit=256%2C256&ssl=1",
+          "about": "MariaDB is an open-source relational database management system that is compatible with MySQL and provides powerful database features.",
+          "url": "https://mariadb.org/"
+        },
+        "bootstrap": {
+          "name": "Bootstrap",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-bootstrap-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226077.png",
+          "about": "Bootstrap is a front-end framework that helps in designing responsive websites quickly with its pre-styled HTML, CSS, and JavaScript components.",
+          "url": "https://getbootstrap.com/"
+        },
+        "java": {
+          "name": "Java",
+          "image": "https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png",
+          "about": "Java is a high-level, object-oriented programming language widely used for building cross-platform applications, especially server-side applications.",
+          "url": "https://www.oracle.com/java/"
+        },
+        "jquery": {
+          "name": "jQuery",
+          "image": "https://images.squarespace-cdn.com/content/v1/5d092c5193b409000129adc4/1561156687619-4HL4TCIN7ZFNF2DZCSOZ/jquery+logo.png",
+          "about": "jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation, event handling, and animation.",
+          "url": "https://jquery.com/"
+        },
+        "mysql": {
+          "name": "MySQL",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-mysql-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945040.png",
+          "about": "MySQL is an open-source relational database management system known for its reliability and ease of use in data management.",
+          "url": "https://www.mysql.com/"
+        },
+        "gitlab": {
+          "name": "GitLab",
+          "image": "https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/Gitlab-iIqM-I0za.png",
+          "about": "GitLab is a DevOps platform that provides version control, CI/CD, and collaborative development tools, all in one platform.",
+          "url": "https://about.gitlab.com/"
+        },
+        "virtualbox": {
+          "name": "VirtualBox",
+          "image": "https://dl2.macupdate.com/images/icons256/24801.png?time=1666721290",
+          "about": "VirtualBox is an open-source virtualization software that allows users to run multiple operating systems on a single machine.",
+          "url": "https://www.virtualbox.org/"
+        },
+        "intellij": {
+          "name": "IntelliJ IDEA",
+          "image": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/ced775da-ddef-41b7-bbc3-e870172021aa.png?w=128&h=128&fit=max&dpr=3&auto=format&q=50",
+          "about": "IntelliJ IDEA is a Java-centric integrated development environment (IDE) by JetBrains, known for its smart code assistance and productivity tools.",
+          "url": "https://www.jetbrains.com/idea/"
+        },
+        "c++": {
+          "name": "C++",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-cplusplus-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-2-pack-logos-icons-3029933.png",
+          "about": "C++ is a powerful general-purpose programming language, an extension of C, widely used in system software, game development, and real-time applications.",
+          "url": "https://isocpp.org/"
+        },
+        "c": {
+          "name": "C",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-c-59-1175248.png?f=webp",
+          "about": "C is a foundational programming language known for its efficiency and flexibility in system programming and low-level applications.",
+          "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+        },
+        "clion": {
+          "name": "CLion",
+          "image": "https://dl.flathub.org/media/com/jetbrains/CLion/a204371b5257c1d04ac891efaa88cfe6/icons/128x128@2/com.jetbrains.CLion.png",
+          "about": "CLion is a cross-platform IDE for C and C++ development, featuring smart code completion, refactoring, and debugging tools.",
+          "url": "https://www.jetbrains.com/clion/"
+        },
+        "trello": {
+          "name": "Trello",
+          "image": "https://cdn-icons-png.flaticon.com/256/174/174874.png",
+          "about": "Trello is a collaborative project management tool that uses boards, lists, and cards to organize and prioritize tasks.",
+          "url": "https://trello.com/"
+        },
+        "android_studio": {
+          "name": "Android Studio",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-android-studio-logo-icon-download-in-svg-png-gif-file-formats--brand-pack-logos-icons-2701880.png",
+          "about": "Android Studio is the official IDE for Android app development, providing tools for building, testing, and debugging Android applications.",
+          "url": "https://developer.android.com/studio"
+        },
+        "kotlin": {
+          "name": "Kotlin",
+          "image": "https://static-00.iconduck.com/assets.00/jb-kotlin-icon-256x256-a8rrb85x.png",
+          "about": "Kotlin is a modern, statically typed programming language that interoperates with Java, commonly used for Android and multiplatform development.",
+          "url": "https://kotlinlang.org/"
+        },
+        "laravel": {
+          "name": "Laravel",
+          "image": "https://jaki-jezyk-programowania.pl/img/technologies/laravel.png",
+          "about": "Laravel is a PHP web framework known for its elegant syntax, MVC architecture, and features that simplify web application development.",
+          "url": "https://laravel.com/"
+        },
+        "php": {
+          "name": "PHP",
+          "image": "https://static-00.iconduck.com/assets.00/php-icon-256x256-oq5bc0bt.png",
+          "about": "PHP is a widely-used open-source scripting language that is especially suited for web development and can be embedded into HTML.",
+          "url": "https://www.php.net/"
+        },
+        "python": {
+          "name": "Python",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-python-2-226051.png?f=webp",
+          "about": "Python is a versatile, high-level programming language known for its readability, ease of learning, and strong support for various applications.",
+          "url": "https://www.python.org/"
+        },
+        "django": {
+          "name": "Django",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-django-11-1175036.png?f=webp",
+          "about": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+          "url": "https://www.djangoproject.com/"
+        },
+        "odoo": {
+          "name": "Odoo",
+          "image": "https://www.shareicon.net/data/256x256/2015/10/06/112722_development_512x512.png",
+          "about": "Odoo is an open-source ERP system that provides a suite of business applications such as CRM, e-commerce, accounting, and inventory management.",
+          "url": "https://www.odoo.com/"
+        },
+        "windows": {
+          "name": "Windows",
+          "image": "https://culture-informatique.net/wp-content/uploads/2021/07/windows.png",
+          "about": "Windows is a family of operating systems developed by Microsoft, widely used for personal computers, tablets, and servers.",
+          "url": "https://www.microsoft.com/windows"
+        }
+      },
+      "cat_personal": "Personal Project",
+      "icon_personal": {
+        "discord": {
+          "name": "Discord",
+          "image": "https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png",
+          "about": "Discord is a VoIP and instant messaging platform designed for creating communities, widely used by gamers and developers.",
+          "url": "https://discord.com/"
+        },
+        "arduino": {
+          "name": "Arduino",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-arduino-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226072.png?f=webp&w=256",
+          "about": "Arduino is an open-source electronics platform based on easy-to-use hardware and software, popular for building electronic projects.",
+          "url": "https://www.arduino.cc/"
+        },
+        "unity": {
+          "name": "Unity",
+          "image": "https://cdn-icons-png.flaticon.com/256/5969/5969346.png",
+          "about": "Unity is a powerful, cross-platform game engine used for developing 2D and 3D games and simulations.",
+          "url": "https://unity.com/"
+        },
+        "csharp": {
+          "name": "C#",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-csharp-1175240.png?f=webp",
+          "about": "C# is a modern, object-oriented programming language developed by Microsoft, widely used in web, desktop, and game development.",
+          "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+        },
+        "ubuntu": {
+          "name": "Ubuntu",
+          "image": "https://cdn.iconscout.com/icon/free/png-256/free-ubuntu-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175076.png?f=webp&w=256",
+          "about": "Ubuntu is a popular open-source Linux operating system, known for its ease of use and large community support.",
+          "url": "https://ubuntu.com/"
+        },
+        "cisco_packet_tracer": {
+          "name": "Cisco Packet Tracer",
+          "image": "https://defkey.com/images/program/cisco-packet-tracer-2023-12-21_10-12-46-icon-resized.png",
+          "about": "Cisco Packet Tracer is a network simulation tool that allows users to create network topologies, experiment with network behavior, and troubleshoot networks.",
+          "url": "https://www.netacad.com/courses/packet-tracer"
+        },
+        "inkscape": {
+          "name": "Inkscape",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Inkscape_Logo.svg",
+          "about": "Inkscape is a free and open-source vector graphics editor, widely used for creating illustrations, icons, and complex graphic designs.",
+          "url": "https://inkscape.org/"
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "projects": {
+        "stratego": {
+          "name": "Stratego",
+          "description": "This application is a duo project, inspired by the board game Stratego, designed for turn-based gameplay. Developed in C++ with Qt Creator, it showcases key features of game development in a desktop environment.",
+          "tech": {
+            "C++": {
+              "name":"C++"
+            },
+            "QtCreator": {
+              "name":"QtCreator"
+            },
+            "mvc": {
+              "name": "MVC"
+            },
+            "Observer pattern": {
+              "name": "Observer Pattern"
+            },
+            "o2": {
+              "name": "Object Oriented"
+            }
+          },
+          "url": "https://github.com/ElSueno323/Stratego",
+          "picture": "stratego.png"
+        },
+        "livy": {
+          "name": "Liv-Y Back-End",
+          "description" : "This application, for which I handled the back-end development, allows property owners to access information related to their rental properties, including details of current tenants, and manage interactions with them. Owners can also invite new tenants through the platform and communicate effectively with them, as well as with maintenance staff such as cleaners and other workers.",
+          "tech": {
+            "nodejs": {
+              "name":"Node.js"
+            },
+            "postgresql": {
+              "name":"PostgreSQL"
+            },
+            "typescript": { "name":
+              "TypeScript"
+            },
+            "zod": {
+              "name":"Zod"
+            },
+            "typeorm": {
+              "name":"TypeORM"
+            },
+            "pdfkit": {
+              "name":"PDFKit"
+            },
+            "s3": {
+              "name":"AWS Simple Storage Service"
+            },
+            "ec2": {"name":
+              "AWS Elastic Compute Cloud"
+            },
+            "github_action": {
+              "name":"GitHub Actions"
+            },
+            "macos": {
+              "name":"MacOS"
+            }
+          },
+          "url": "",
+          "picture": "livy.png"
+        },
+        "quickfood": {
+          "name": "QuickFood",
+          "description": "The application allows users to search for recipes based on specific tags, receive a random recipe, add it to their favorites, or start a new search. Each recipe displays the required ingredients, which users can check off to indicate whether they have them or not. Additionally, the application provides an estimated preparation time for each recipe.",
+          "tech": {
+            "kotlin": {
+              "name": "Kotlin"
+            },
+            "xml": {
+              "name": "XML"
+            },
+            "jetpack": {
+              "name": "Jetpack Compose"
+            },
+            "coroutine": {
+              "name": "Kotlin Coroutines"
+            },
+            "android": {
+              "name": "Android"
+            },
+            "room": {
+              "name": "Room"
+            },
+            "mvvm": {
+              "name": "MVVM"
+            },
+            "api": {
+              "name": "API"
+            },
+            "o2": {
+              "name": "Object Oriented"
+            }
+          },
+          "url": "https://github.com/ElSueno323/QuickFood",
+          "picture": "quickfood.png"
+        },
+        "stib": {
+          "name": "Stib Map",
+          "description": "STIB Metro is a Java application that calculates the shortest route for the Brussels metro using the official STIB API. By leveraging Dijkstra's algorithm, this application helps users determine the quickest path between metro stations in the STIB network.",
+          "tech": {
+            "java": {
+              "name": "Java"
+            },
+            "maven": {
+              "name": "Maven"
+            },
+            "sql": {
+              "name": "SQLite"
+            },
+            "javafx": {
+              "name": "JavaFX"
+            },
+            "scenebuilder": {
+              "name": "SceneBuilder"
+            },
+            "o2": {
+              "name": "Object Oriented"
+            }
+          },
+          "url": "https://github.com/ElSueno323/StibMap",
+          "picture": "stib.png"
+        },
+        "luckyNumber": {
+          "name": "Lucky Number",
+          "description": "This Java application is based on the Lucky Number game and is played exclusively through the command-line interface. It follows a Model-View-Controller (MVC) architecture to separate the different layers of the application.",
+          "tech": {
+            "java": {
+              "name":"Java"
+            },
+            "maven": {
+              "name": "Maven"
+            },
+            "o2": {
+              "name": "Object Oriented"
+            }
+          },
+          "url": "https://github.com/ElSueno323/LuckyNumber",
+          "picture": "lucky_number.png"
+        },
+        "subtitle_tech": "TECH STACK"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "Contact me into this link",
+      "network": {
+        "email": {
+          "name": "Email",
+          "link": "mailto:san.esp.gab.br@gmail.com",
+          "logo": "https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--mail-envelope-message-miscellaneous-pack-icons-1713291.png"
+        },
+        "github": {
+          "name": "GitHub",
+          "link": "https://github.com/ElSueno323",
+          "logo": "https://les-tilleuls.coop/wp-content/uploads/2023/02/25231.png"
+        },
+        "linkedin": {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/gabriel-espinosa-6834722b2/",
+          "logo": "https://cdn-icons-png.flaticon.com/256/61/61109.png"
+        }
+      }
+
+    },
+    "button": {
+      "hire": "Hire Me",
+      "cv": "Get CV",
+      "portfolio": "Take a Look"
+    },
+    "extra": {
+      "tv_time": {
+        "url": "https://tvtime.com/r/34Sj1"
+      },
+      "cv": {
+        "name": "Gabriel_Espinosa_CV.pdf",
+        "path":"/CV_EN.pdf"
+      },
+      "copyright": "© Created with ❤ by Gabriel Espinosa"
+    }
+  }
+}
