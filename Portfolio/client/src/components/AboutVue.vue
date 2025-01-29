@@ -4,15 +4,15 @@
     <div class="container_top_left">
       <h1>
         <span class="colored">
-          {{about.firstname}} {{about.lastname}}
+          {{$i18n.messages.msg.translation.content.about.firstname}} {{$i18n.messages.msg.translation.content.about.lastname}}
         </span>
       </h1>
       <div class="container_about">
         <h2>
-          {{  about.title_about }}
+          {{  $i18n.messages.msg.translation.content.about.title_about }}
         </h2>
         <h6>
-          {{  about.content_about }} <a href="https://tvtime.com/r/34Sj1">here</a>)
+          {{  $i18n.messages.msg.translation.content.about.content_about }} <a href="https://tvtime.com/r/34Sj1">here</a>)
         </h6>
       </div>
 
@@ -22,12 +22,12 @@
       <div class="container_education">
 
         <h2>
-          {{  about.title_education }}
+          {{  $i18n.messages.msg.translation.content.about.title_education }}
         </h2>
         <div class="container_education_content">
           <img src="../assets/HE2B.webp" alt="">
           <h6>
-            {{  about.content_education }}
+            {{  $i18n.messages.msg.translation.content.about.content_education }}
           </h6>
         </div>
       </div>
@@ -38,11 +38,6 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-
-const { messages } = useI18n();
-const about=messages.value.msg.translation.content.about;
-
 </script>
 
 <style scoped>
