@@ -33,13 +33,13 @@ export default {
       </b-nav-item>
 
       <div class=" d-flex align-items-center">
-<!--        <button class="btn btn-success mx-0" id="languages"-->
-<!--                v-for="lang in availableLocales"-->
-<!--                :key="lang"-->
-<!--                :class="{ active: lang === currentLocale }"-->
-<!--                @click="changeLanguage(lang)">-->
-<!--          {{ lang.toUpperCase() }}-->
-<!--        </button>-->
+        <button class="btn btn-success mx-0" id="languages"
+                v-for="lang in availableLocales"
+                :key="lang"
+                :class="{ active: lang === currentLocale }"
+                @click="changeLanguage(lang)">
+          {{ lang.toUpperCase() }}
+        </button>
       </div>
     </b-nav>
 
