@@ -31,32 +31,22 @@ export default {
                   @click.prevent="$emit('navigate',content.name)">
         <span class="responsive-title">{{ content.title }}</span>
       </b-nav-item>
+      <b-dropdown toggle-class="custom-background text-white"
+                  variant="link"
+                  class="m-1"
+                  size="sm"
+                  :text="currentLocale.toUpperCase()"
+      >
+        <b-dropdown-item
+          v-for="lang in availableLocales"
+          :key="lang"
+          @click="changeLanguage(lang)"
+          :class="{'custom-background': lang === currentLocale }"
+        >
+          <div :class="{'text-white': lang === currentLocale } "> {{ lang.toUpperCase() }}</div>
+        </b-dropdown-item>
+      </b-dropdown>
 
-<!--      <div class=" d-flex align-items-center">-->
-<!--        <button class="btn btn-success mx-0" id="languages"-->
-<!--                v-for="lang in availableLocales"-->
-<!--                :key="lang"-->
-<!--                :class="{ active: lang === currentLocale }"-->
-<!--                @click="changeLanguage(lang)">-->
-<!--          {{ lang.toUpperCase() }}-->
-<!--        </button>-->
-<!--      </div>-->
-
-<!--      <b-dropdown toggle-class="custom-background text-white nav-item small"-->
-<!--                  id="zizi"-->
-<!--                  variant="link"-->
-<!--                  :class="'languages'"-->
-<!--                  :text="currentLocale.toUpperCase()"-->
-<!--      >-->
-<!--        <b-dropdown-item-->
-<!--          v-for="lang in availableLocales"-->
-<!--          :key="lang"-->
-<!--          @click="changeLanguage(lang)"-->
-<!--          :class="{'custom-background': lang === currentLocale }"-->
-<!--        >-->
-<!--          <div :class="{'text-white': lang === currentLocale } "> {{ lang.toUpperCase() }}</div>-->
-<!--        </b-dropdown-item>-->
-<!--      </b-dropdown>-->
     </b-nav>
 
     <div id="header-line" class="custom-background"></div>
@@ -87,22 +77,13 @@ export default {
   font-size: 1rem;
 }
 
-.languages{
-  font-size: 1px;
-}
-
 
 
 @media (min-width: 300px) {
   #nav_body {
     font-size: 0.6rem;
   }
-  .btn-group, .btn-group-vertical {
-    all:unset ;
-    font-size: 0.5rem ;
-    width: auto;
-    color: #1a1d20;
-  }
+
 }
 
 @media (min-width: 576px) {
@@ -110,12 +91,6 @@ export default {
     font-size: 0.9rem;
   }
 
-  .languages{
-    padding: 0.2rem;
-    --bs-btn-font-size: 100rem !important;
-    font-size: 100px !important;
-
-  }
 }
 
 @media (min-width: 768px) {
@@ -123,11 +98,6 @@ export default {
     font-size: 1.5rem;
   }
 
-  .languages{
-    width: 0.1rem;
-    font-size: 999999px !important;
-    padding: 0.2rem;
-  }
 }
 
 @media (min-width: 992px) {
@@ -142,7 +112,4 @@ export default {
   }
 }
 
-body .btn-group .languages {
-  all:unset ;
-}
 </style>
