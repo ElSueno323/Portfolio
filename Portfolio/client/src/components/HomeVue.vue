@@ -1,7 +1,7 @@
 
 <template>
 
-  <div class="container">
+  <div v-if="isImageLoaded" class="container">
     <div class="container_top_left">
       <h2>
         {{ $i18n.messages.msg.translation.content.greeting.title }}
@@ -43,16 +43,38 @@
 
     <div class="container_top_right">
       <div class="full_height">
-        <img class="portrait" alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}" src="../assets/portrait_normale.jpg">
+        <img class="portrait"
+             alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}"
+             :src="imageSrc"
+             @load="onImageLoad"
+        />
       </div>
     </div>
 
   </div>
 
+  <div v-else>
+    <p>Loading...</p>
+  </div>
+
 </template>
 
-<script setup >
-
+<script>
+export default {
+  data() {
+    return {
+      imageSrc: require("../assets/portrait_normale.jpg"),
+      isImageLoaded: false,
+    };
+  },
+  mounted() {
+    const img = new Image();
+    img.src = this.imageSrc;
+    img.onload = () => {
+      this.isImageLoaded = true;
+    };
+  },
+};
 </script>
 
 <style scoped>

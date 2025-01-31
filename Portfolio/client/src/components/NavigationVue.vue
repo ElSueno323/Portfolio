@@ -42,21 +42,21 @@ export default {
 <!--        </button>-->
 <!--      </div>-->
 
-      <b-dropdown toggle-class="custom-background text-white nav-item small"
-                  id="zizi"
-                  variant="link"
-                  :class="'languages'"
-                  :text="currentLocale.toUpperCase()"
-      >
-        <b-dropdown-item
-          v-for="lang in availableLocales"
-          :key="lang"
-          @click="changeLanguage(lang)"
-          :class="{'custom-background': lang === currentLocale }"
-        >
-          <div :class="{'text-white': lang === currentLocale } "> {{ lang.toUpperCase() }}</div>
-        </b-dropdown-item>
-      </b-dropdown>
+<!--      <b-dropdown toggle-class="custom-background text-white nav-item small"-->
+<!--                  id="zizi"-->
+<!--                  variant="link"-->
+<!--                  :class="'languages'"-->
+<!--                  :text="currentLocale.toUpperCase()"-->
+<!--      >-->
+<!--        <b-dropdown-item-->
+<!--          v-for="lang in availableLocales"-->
+<!--          :key="lang"-->
+<!--          @click="changeLanguage(lang)"-->
+<!--          :class="{'custom-background': lang === currentLocale }"-->
+<!--        >-->
+<!--          <div :class="{'text-white': lang === currentLocale } "> {{ lang.toUpperCase() }}</div>-->
+<!--        </b-dropdown-item>-->
+<!--      </b-dropdown>-->
     </b-nav>
 
     <div id="header-line" class="custom-background"></div>
