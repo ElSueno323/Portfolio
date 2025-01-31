@@ -31,16 +31,22 @@ export default {
                   @click.prevent="$emit('navigate',content.name)">
         <span class="responsive-title">{{ content.title }}</span>
       </b-nav-item>
+      <b-dropdown toggle-class="custom-background text-white"
+                  variant="link"
+                  class="m-1"
+                  size="sm"
+                  :text="currentLocale.toUpperCase()"
+      >
+        <b-dropdown-item
+          v-for="lang in availableLocales"
+          :key="lang"
+          @click="changeLanguage(lang)"
+          :class="{'custom-background': lang === currentLocale }"
+        >
+          <div :class="{'text-white': lang === currentLocale } "> {{ lang.toUpperCase() }}</div>
+        </b-dropdown-item>
+      </b-dropdown>
 
-      <div class=" d-flex align-items-center">
-<!--        <button class="btn btn-success mx-0" id="languages"-->
-<!--                v-for="lang in availableLocales"-->
-<!--                :key="lang"-->
-<!--                :class="{ active: lang === currentLocale }"-->
-<!--                @click="changeLanguage(lang)">-->
-<!--          {{ lang.toUpperCase() }}-->
-<!--        </button>-->
-      </div>
     </b-nav>
 
     <div id="header-line" class="custom-background"></div>
@@ -77,10 +83,7 @@ export default {
   #nav_body {
     font-size: 0.6rem;
   }
-  #languages{
-    font-size: 0.5rem;
-    padding: 0.2rem;
-  }
+
 }
 
 @media (min-width: 576px) {
@@ -88,9 +91,6 @@ export default {
     font-size: 0.9rem;
   }
 
-  #languages{
-    font-size: 0.7rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -98,25 +98,18 @@ export default {
     font-size: 1.5rem;
   }
 
-  #languages{
-    font-size: 0.8rem;
-    padding: 0.2rem;
-  }
 }
 
 @media (min-width: 992px) {
   #nav_body {
     font-size: 1.6rem;
   }
-
-
 }
 
 @media (min-width: 1200px) {
   #nav_body {
     font-size: 1.7rem;
   }
-
 }
 
 </style>

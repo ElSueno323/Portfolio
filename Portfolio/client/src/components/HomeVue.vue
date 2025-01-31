@@ -1,14 +1,14 @@
 
 <template>
 
-  <div class="container">
+  <div v-if="isImageLoaded" class="container">
     <div class="container_top_left">
       <h2>
-        {{greeting.title}}
+        {{ $i18n.messages.msg.translation.content.greeting.title }}
       </h2>
       <h1 class="greeting">
-        <span>{{greeting.name}}</span>
-        <span v-for="(letter, index) in `${greeting.firstname}\u00A0${greeting.lastname}`"
+        <span>{{ $i18n.messages.msg.translation.content.greeting.name }}</span>
+        <span v-for="(letter, index) in `${$i18n.messages.msg.translation.content.greeting.firstname}\u00A0${$i18n.messages.msg.translation.content.greeting.lastname}`"
               :key="index"
               :style="{ animationDelay: `${index * 0.1}s` }"
               class="colored">
@@ -16,9 +16,9 @@
         </span>
       </h1>
       <h2>
-        {{  greeting.job }}
+        {{  $i18n.messages.msg.translation.content.greeting.job }}
       </h2>
-      <h5 v-for="(letter, index) in `${greeting.country_info}\u00A0${greeting.country}`"
+      <h5 v-for="(letter, index) in `${$i18n.messages.msg.translation.content.greeting.country_info}\u00A0${$i18n.messages.msg.translation.content.greeting.country}`"
           :key="index"
           :style="{ animationDelay: `${index * 0.1}s` }"
         class="colored">
@@ -34,8 +34,8 @@
       </div>
       <div>
         <b-button class="gradient-button"
-                  :href="cv.path"
-                  :download="cv.name">
+                  :href=$i18n.messages.msg.translation.content.extra.cv.path
+                  :download=$i18n.messages.msg.translation.content.extra.cv.name >
           {{  $i18n.messages.msg.translation.content.button.cv }}
         </b-button>
       </div>
@@ -43,22 +43,38 @@
 
     <div class="container_top_right">
       <div class="full_height">
-        <img class="portrait" alt="{{ greeting.firstname }}" src="../assets/portrait_normale.jpg">
+        <img class="portrait"
+             alt="{{ $i18n.messages.msg.translation.content.greeting.firstname }}"
+             :src="imageSrc"
+             @load="onImageLoad"
+        />
       </div>
     </div>
 
   </div>
 
+  <div v-else>
+    <p>Loading...</p>
+  </div>
+
 </template>
 
-<script setup >
-
-import { useI18n } from 'vue-i18n';
-
-const { messages } = useI18n();
-const greeting=messages.value.msg.translation.content.greeting;
-const cv =messages.value.msg.translation.content.extra.cv;
-
+<script>
+export default {
+  data() {
+    return {
+      imageSrc: require("../assets/portrait_normale.jpg"),
+      isImageLoaded: false,
+    };
+  },
+  mounted() {
+    const img = new Image();
+    img.src = this.imageSrc;
+    img.onload = () => {
+      this.isImageLoaded = true;
+    };
+  },
+};
 </script>
 
 <style scoped>
