@@ -1,9 +1,7 @@
 <template>
   <div class="container-fluid "
   style="padding: 0 ">
-    <div style="
-    background: var(--nav-active-background);
-">
+    <div class="contact-background">
       <h1 style="color: white ; font-weight: bold">
         {{ contact.title }}
       </h1>
@@ -15,12 +13,11 @@
           v-for="network in contact.network"
           :key="network"
           :href="network.link"
-          style="margin: 1vh;"
+          class="contact-btn"
           variant="outline-light"
         >
-          <img :src="network.logo" alt="" style="min-width: 1vh; max-width: 2vh;"/>
-          <span>{{ network.name }}</span>
-
+          <img :src="network.logo" alt="" class="contact-logo"/>
+          <span class="contact-text">{{ network.name }}</span>
         </b-button>
       </div>
       <div>
@@ -41,16 +38,37 @@ const copyright = messages.value.msg.translation.content.extra.copyright;
 </script>
 <style>
 
-
 .container_contact{
   display: flex;
   gap: 2vh;
   justify-content: center;
 }
 
-.contact_button{
-  min-width: 1vh;
-  max-width: 2vh;
+.contact-background {
+  background: var(--nav-active-background);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 2vh;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  padding: 0.7em 1.2em;
+  font-size: 1em;
+}
+
+.contact-logo {
+  min-width: 1.7em;
+  max-width: 2.2em;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+.contact-text {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 </style>
