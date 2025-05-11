@@ -192,13 +192,13 @@
         },
         "docker": {
           "name": "Docker",
-          "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/docker-icon.png",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
           "about": "Docker is an open platform for developing, shipping, and running applications inside lightweight, portable containers.",
           "url": "https://www.docker.com/"
         },
         "mariadb": {
           "name": "MariaDB",
-          "image": "https://i0.wp.com/sysad.mn/wp-content/uploads/2019/08/mariadb.png?fit=256%2C256&ssl=1",
+          "image": "https://www.svgrepo.com/show/354037/mariadb-icon.svg",
           "about": "MariaDB is an open-source relational database management system that is compatible with MySQL and provides powerful database features.",
           "url": "https://mariadb.org/"
         },

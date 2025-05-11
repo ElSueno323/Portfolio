@@ -123,7 +123,6 @@ export default {
 .container_languages {
   margin-top: 2vh;
   margin-bottom: 3vh;
-  background: var(--nav-active-background);
   color: white;
   border-radius: 5px;
 }
@@ -144,7 +143,6 @@ export default {
 }
 
 .container_tools {
-  background: var(--nav-active-background);
   color: white;
 }
 
@@ -179,5 +177,24 @@ img:hover {
   transform: scale(2.2);
   position: relative;
   z-index: 100;
+}
+
+.container_languages h2,
+.container_tools h2 {
+  background: var(--nav-active-background);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 15px 0;
+  border: 2px solid var(--nav-active-background);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container_languages h2:hover,
+.container_tools h2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 </style>
