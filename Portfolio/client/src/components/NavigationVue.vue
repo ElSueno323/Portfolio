@@ -65,9 +65,22 @@ export default {
 }
 
 #header-line {
-  margin-top: -1px;
+  width: 100%;
+  background: linear-gradient(70deg, #34ab3d, #0072f5, #34ab3d, #0072f5, #34ab3d);
+  background-size: 200% 100%;
+  animation: gradient-flow 2.5s linear infinite;
   padding-top: 3vh;
 }
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .nav-item{
   font-weight: bold;
 }
