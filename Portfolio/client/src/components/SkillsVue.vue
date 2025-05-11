@@ -1,6 +1,5 @@
-
 <template>
-  <div class="container">
+  <div class="container" ref="skillsContainer" :class="{ visible: isVisible }">
     <h1>
       <span class="colored">
         {{ $i18n.messages.msg.translation.content.skills.title }}
@@ -15,8 +14,8 @@
           <div
             v-for="content in $i18n.messages.msg.translation.content.skills.spoken_languages"
             :key="content"
-          class="spoken_languages">
-              <span>{{ content.name }}</span> <span> - </span> <span>{{ content.level }}</span>
+            class="spoken_languages">
+            <span>{{ content.name }}</span> <span> - </span> <span>{{ content.level }}</span>
             <flag :iso="content.icon" />
           </div>
         </ul>
@@ -37,7 +36,7 @@
               <div
                 v-for="content in $i18n.messages.msg.translation.content.skills.icon_professional"
                 :key="content"
-              >
+                class="icon-wrapper">
                 <a :href="content.url" :title="content.about">
                   <img :src="content.image" :alt="content.name">
                 </a>
@@ -46,13 +45,12 @@
           </div>
 
           <div class="container_icon">
-            <div>{{ $i18n.messages.msg.translation.content.skills.cat_school }}
-            </div>
+            <div>{{ $i18n.messages.msg.translation.content.skills.cat_school }}</div>
             <div class="icons">
               <div
                 v-for="content in $i18n.messages.msg.translation.content.skills.icon_school"
                 :key="content"
-              >
+                class="icon-wrapper">
                 <a :href="content.url" :title="content.about">
                   <img :src="content.image" :alt="content.name">
                 </a>
@@ -64,12 +62,11 @@
             <div>
               {{ $i18n.messages.msg.translation.content.skills.cat_personal }}
             </div>
-
             <div class="icons">
               <div
                 v-for="content in $i18n.messages.msg.translation.content.skills.icon_personal"
                 :key="content"
-              >
+                class="icon-wrapper">
                 <a :href="content.url" :title="content.about">
                   <img :src="content.image" :alt="content.name">
                 </a>
@@ -79,12 +76,31 @@
         </ul>
       </h6>
     </div>
-
   </div>
 </template>
 
-<script setup lang="ts">
+<script>
+export default {
+  name: 'SkillsVue',
+  data() {
+    return {
+      isVisible: false
+    }
+  },
+  mounted() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        this.isVisible = entry.isIntersecting
+      })
+    }, {
+      threshold: 0.1
+    })
 
+    if (this.$refs.skillsContainer) {
+      observer.observe(this.$refs.skillsContainer)
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -93,7 +109,15 @@
   display: grid;
   margin-right: 3vh;
   align-self: center;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  will-change: transform, opacity;
+}
 
+.container.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .container_languages {
@@ -104,9 +128,9 @@
   border-radius: 5px;
 }
 
-.spoken_languages{
+.spoken_languages {
   display: flex;
-  gap:2vh;
+  gap: 2vh;
 }
 
 .container_icon {
@@ -119,14 +143,12 @@
   flex-wrap: wrap;
 }
 
-
-
 .container_tools {
   background: var(--nav-active-background);
   color: white;
 }
 
-h6{
+h6 {
   background: white;
   color: black;
   padding: 1vh;
@@ -155,8 +177,7 @@ img:hover {
   -webkit-transform: scale(2);
   -o-transform: scale(2);
   transform: scale(2.2);
-  position:relative;
-  z-index:100;
+  position: relative;
+  z-index: 100;
 }
-
 </style>
