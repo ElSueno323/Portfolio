@@ -64,18 +64,18 @@ onMounted(() => {
   display: grid;
   margin: 5vh;
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateY(100px);
   transition: all 0.8s ease-out;
 }
 
 .container.visible {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .container.hidden {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateY(100px);
 }
 
 .container_top_left {
